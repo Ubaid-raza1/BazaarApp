@@ -1,0 +1,155 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #fff;
+    margin: 24px 0 0 24px;
+}
+#cardWidth3{
+    width: 30%;
+}
+#cardWidth1{
+    width: 22.7%;
+}
+
+
+.card:hover {
+
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+}
+
+.cradImgTxt>img {
+    width: 100%;
+}
+
+.cradImgTxt {
+    position: relative;
+    
+}
+
+.cardOffer {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    background-color: #D23F57;
+    color: #fff;
+    border-radius: 13px;
+    padding: 3px 8px;
+    font-size: 10px;
+}
+#cardOfferPercen{
+    font-size: 10px;
+    padding-right: 3px;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.cardTxt {
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+    justify-content: space-around;
+    min-height: auto;
+    text-transform: capitalize;
+  
+}
+
+.CardBtn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.CardBtn>Button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(210, 63, 87, 0.5);
+    color: #D23F57;
+    min-width: 0;
+    min-height: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 5px 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.CardBtn>Button:active {
+    background-color: rgba(210, 63, 87, 0.4)
+}
+
+#cardStar {
+    margin: 3px;
+    color: #faaf00;
+}
+
+#dolarTxt {
+    margin-right: 10px;
+    color: #D23F57;
+}
+.simpleCardIcon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px 20px 0px 0px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    padding: 18px;
+    background-color: rgb(243, 245, 249);
+}
+#simpleCardIcons{
+    font-size: 30px;
+}
+
+.simpleCard{
+    width: 23%;
+    text-align: center;
+    background-color: #fff;
+    padding: 2.4rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
+    cursor: pointer;
+}
+.simpleCard:hover{
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+}
+.simpleCardTitle{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 16px 0;
+}
+.simpleCardPara{
+    color: #7D879C;
+    margin: 18px 0;
+    font-size: 16px;
+}
+.simpleCardIcon{
+    margin: 8px;
+}
+.simpleCardMain{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px 0;
+}

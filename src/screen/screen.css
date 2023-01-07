@@ -1,0 +1,323 @@
+.cardMain {
+    display: flex;
+    margin: 0 35px;
+}
+
+.cardCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardTitle {
+    padding-left: 26px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.cardTxtIcon {
+    cursor: pointer;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    color: #7D879C
+}
+
+.cardButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    border-radius: 9px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
+    width: 52%;
+    padding: 1.25rem;
+}
+
+.cardBtn1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBtn1>Button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    background-color: #F6F9FC;
+    color: black;
+    border: none;
+
+}
+
+.cardBtn2>Button {
+    font-weight: 600;
+    margin-top: 64px;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #F6F9FC;
+    color: black;
+    border: none;
+}
+
+.cardBtn1>Button:hover {
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+}
+
+.cardBtn2>Button:hover {
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+}
+
+
+
+.cardHeaderTxt {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.cardHeaderTxt>h3 {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cardSlash {
+    color: silver;
+}
+
+
+
+/* categories page css */
+.mainCategories {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.categoryTxtIcon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
+}
+
+#categoryIcon1 {
+    font-size: 24px;
+    color: #D23F57;
+}
+
+.categoryTitle {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.categoryUnderTxtIcon1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.categoryUnderTxtIcon2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #7D879C;
+    cursor: pointer;
+}
+
+#categoryIcon2 {
+    display: flex;
+    align-items: center;
+    color: #7D879C;
+}
+
+.firstCategory {
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondCategory {
+    display: flex;
+    justify-content: space-around;
+}
+
+.CategoryUnder {
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
+    display: flex;
+    align-items: center;
+    width: 15%;
+    padding: 4px;
+    cursor: pointer;
+    /* margin: 20px ; */
+    margin: 24px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.CategoryUnder:hover {
+    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
+}
+
+/* categories page css */
+
+
+/* forMoreMain page css */
+.forMoreMain {}
+
+.forMoreCards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* forMoreMain page css */
+/* footerMain page css */
+.footerMain {
+    padding: 16px 24px;
+    margin: 0 34.5px;
+}
+
+.footerDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+}
+
+.footerIcon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#footerPlayStoreImgTxt {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: #161d2b;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+
+}
+
+#footerPlayStoreImg {
+    padding-top: 6px;
+}
+
+#footerPlayStoreTxt {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+#footerPlayStoreTxt>span {
+    font-weight: 700;
+}
+
+.footerPara,
+#FooterAboutTxts,
+#FooterCustomerCareTxts,
+#footerContactUsPara,
+#footerContactUsEmail,
+#footerContactUsPhoneNum {
+    color: #AEB4BE;
+}
+
+.footerPara {
+    padding: 20px 0;
+}
+
+#FooterAboutTitle,
+#FooterCustomerCareTitle,
+#footerContactUsTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#FooterCustomerCarePara {
+    padding: 4.5px 0;
+    cursor: pointer;
+}
+
+#FooterCustomerCarePara:hover {
+    color: #fff;
+}
+
+#footerContactUsPara,
+#footerContactUsEmail,
+#footerContactUsPhoneNum {
+    padding: 4.5px 0;
+}
+
+#footerContactUsPhoneNum {
+    margin-bottom: 4.8px;
+}
+
+#footerConatctIcon {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    margin: 4px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#footerConatctIcon:hover {
+
+    background-color: rgba(0, 0, 0, 0.04)
+}
+
+#footerConIcon {
+    color: #fff;
+}
+
+/* footerMain page css */
