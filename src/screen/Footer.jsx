@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
                 <div id="footerPlayStoreTxt">
                   <span>Get it on</span>
-                  <span>Google Play</span>
+                  <span>App Store</span>
                 </div>
               </div>
             </div>

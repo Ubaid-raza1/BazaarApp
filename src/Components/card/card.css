@@ -6,10 +6,12 @@
     background-color: #fff;
     margin: 24px 0 0 24px;
 }
-#cardWidth3{
+
+#cardWidth3 {
     width: 30%;
 }
-#cardWidth1{
+
+#cardWidth1 {
     width: 22.7%;
 }
 
@@ -25,7 +27,7 @@
 
 .cradImgTxt {
     position: relative;
-    
+
 }
 
 .cardOffer {
@@ -38,7 +40,8 @@
     padding: 3px 8px;
     font-size: 10px;
 }
-#cardOfferPercen{
+
+#cardOfferPercen {
     font-size: 10px;
     padding-right: 3px;
 }
@@ -56,7 +59,7 @@
     justify-content: space-around;
     min-height: auto;
     text-transform: capitalize;
-  
+
 }
 
 .CardBtn {
@@ -93,7 +96,8 @@
     margin-right: 10px;
     color: #D23F57;
 }
-.simpleCardIcon{
+
+.simpleCardIcon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -119,11 +123,12 @@
     padding: 18px;
     background-color: rgb(243, 245, 249);
 }
-#simpleCardIcons{
+
+#simpleCardIcons {
     font-size: 30px;
 }
 
-.simpleCard{
+.simpleCard {
     width: 23%;
     text-align: center;
     background-color: #fff;
@@ -132,24 +137,98 @@
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
     cursor: pointer;
 }
-.simpleCard:hover{
+
+.simpleCard:hover {
     box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
 }
-.simpleCardTitle{
+
+.simpleCardTitle {
     font-size: 18px;
     font-weight: 700;
     margin: 16px 0;
 }
-.simpleCardPara{
+
+.simpleCardPara {
     color: #7D879C;
     margin: 18px 0;
     font-size: 16px;
 }
-.simpleCardIcon{
+
+.simpleCardIcon {
     margin: 8px;
 }
-.simpleCardMain{
+
+.simpleCardMain {
     display: flex;
     justify-content: space-evenly;
     padding: 24px 0;
 }
+
+.RatingCard>img {
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+
+}
+
+.RatingCard>img:hover {
+    filter: drop-shadow(0 0 0 black);
+}
+
+.RatingCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+.RatingTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* featureBrandCard css */
+
+
+.featureBrandCard>img {
+    width: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.featureBrandCard>img:hover {
+    filter: brightness(65%);
+    opacity: 1;
+}
+
+.featureBrandTxt {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/* featureBrandCard css */
+
+/* bigDiscount css */
+
+.bigDiscount>img {
+    width: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.bigDiscount>img:hover {
+    filter: drop-shadow(1px 2px 6px black);
+   
+}
+
+.bigDiscount {
+    background-color: #fff;
+    margin: 0 10px;
+    box-sizing: 10px;
+    border-radius: 10px;
+}
+
+/* bigDiscount css */

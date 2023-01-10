@@ -321,3 +321,152 @@
 }
 
 /* footerMain page css */
+
+/* flash Deal css*/
+
+.flashDeal {
+    display: flex;
+}
+
+.flashDealHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#chargerIcon {
+    font-size: 20px;
+    color: #D23F57;
+}
+
+.flashDealTxt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flashDealUnderTxt {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.flashDealUnderIcon {
+    display: flex;
+    align-items: center;
+}
+
+.flashDealTxtIcon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #7D879C;
+    cursor: pointer;
+}
+
+/* flash Deal css*/
+
+/* top Categories css */
+.topCategoriesImgSection>img {
+    /* background: rgba(0, 0, 0, 0.3); */
+
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    height: auto;
+    /* transition: .5s ease;
+    backface-visibility: hidden;
+    display: block; */
+}
+
+.topCategoriesImgSection>img:hover {
+    filter: brightness(65%) ;
+    opacity: 1;
+}
+
+.topCategoriesImgSection {
+    position: relative;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    background-color: #fff;
+
+}
+
+
+
+.topCategoriesTxt {
+    position: absolute;
+    top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topCategories {
+    display: flex;
+    justify-content: space-around;
+}
+
+#topCategoriesTxt1 {
+    background-color: #0F3460;
+    color: #fff;
+    border-radius: 14px;
+    font-size: 10px;
+    padding: 5px 8px;
+}
+
+#topCategoriesTxt2 {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000;
+    border-radius: 14px;
+    font-size: 10px;
+    padding: 5px 8px;
+}
+
+/* top Categories css */
+
+
+/* Top Rating Card css*/
+
+.topRatingCard{
+   display: flex;
+   justify-content: space-around;
+}
+.topRating{
+    margin: 20px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.featureCard{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+.topRatingOrFeaturesBrands{
+    display: flex;
+}
+/* Top Rating Card css*/
+
+/* newArival css */
+.newArival{
+    display: flex;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 20px;
+}
+/* newArival css */
+
+/* bigDiscountCard css */
+.bigDiscountCard{
+    display: flex;
+    margin: 20px;
+}
+/* bigDiscountCard css */

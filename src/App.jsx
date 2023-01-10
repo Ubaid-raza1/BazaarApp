@@ -12,6 +12,11 @@ import Categories from "./screen/Categories";
 import MoreForYou from "./screen/MoreForYou";
 import SimpleCard from "./screen/SimpleCards";
 import Footer from "./screen/Footer"
+import FlashDeals from "./screen/FlashDeals";
+import TopCategories from "./screen/TopCategories";
+import TopRatings from "./screen/TopRatings";
+import NewArrivals from "./screen/NewArrivals";
+import BigDiscounts from "./screen/BigDiscounts";
 
 const App = () => {
   return (
@@ -25,6 +30,11 @@ const App = () => {
         <FirstSlider />
       </div>
       <div className="second">
+        <FlashDeals />
+        <TopCategories />
+        <TopRatings />
+        <NewArrivals />
+        <BigDiscounts />
         <Cars />
         <MobilePhones />
         <div className="secondImg">
