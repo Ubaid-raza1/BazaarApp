@@ -1,59 +1,19 @@
-import React, { useState } from "react";
-import {
-  mobilePhoneBrand,
-  mobilePhoneShop,
-  mobilePhone,
-} from "../data/MobilePhone";
-import Button from "../Components/button/Button";
+import React from "react";
+import { mobilePhone,mobilePhoneBrand,mobilePhoneShop } from "../data/MobilePhone";
 import Card from "../Components/card/Card";
-import { FaAngleRight } from "react-icons/fa";
+import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import "./screen.css";
+import BrandAndShop from "../Components/cardButtons/BrandAndShop";
+
 const id = { cardWidth: "cardWidth3" };
+
 const MobilePhones = () => {
-  const [toggle, setToggle] = useState(true);
-  const Brand = () => setToggle(true);
-  const Shop = () => setToggle(false);
   return (
-    <div className="cardMain">
-      <div className="cardButton" style={{ width: toggle ? "77%" : "80%" }}>
-        <div className="cardHeaderTxt">
-          <h3
-            className="cardBrandTxt"
-            style={{ color: toggle ? "black" : "silver" }}
-            onClick={Brand}
-          >
-            Brands
-          </h3>
-          <h3 className="cardSlash">|</h3>
-          <h3
-            className="cardShopTxt"
-            onClick={Shop}
-            style={{ color: toggle ? "silver" : "black" }}
-          >
-            Shops
-          </h3>
-        </div>
-        <div className="cardBtn1">
-          {toggle
-            ? mobilePhoneBrand?.map((item) => {
-                return <Button value={item.text} img={item.img} />;
-              })
-            : mobilePhoneShop?.map((item) => {
-                return <Button value={item.text} img={item.img} />;
-              })}
-        </div>
-        <div className="cardBtn2">
-          <Button value={toggle ? "View All Brands" : "View All Shops"} />
-        </div>
-      </div>
+    <div className="carMain">
+      <BrandAndShop brand={mobilePhoneBrand} shop={mobilePhoneShop} />
       <div>
-        <div className="cardHeader">
-          <div className="cardTitle">Mobile Phones</div>
-          <div className="cardTxtIcon">
-            View all <FaAngleRight />
-          </div>
-        </div>
-        <div className="cardCard">
+        <IconTxtHeader text="Mobile Phone" />
+        <div className="carCard">
           <Card productData={mobilePhone} id={id} />;
         </div>
       </div>

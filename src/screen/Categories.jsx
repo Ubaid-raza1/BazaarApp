@@ -1,25 +1,12 @@
 import React from "react";
 import { firstCategories, secondCategories } from "../data/Categories";
 import { BsFillGridFill } from "react-icons/bs";
-import { FaAngleRight } from "react-icons/fa";
+import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 
 const Categories = () => {
   return (
     <div className="mainCategories">
-      <div className="categoryTxtIcon">
-        <div className="categoryUnderTxtIcon1">
-          <span className="categoryIcon">
-            <BsFillGridFill id="categoryIcon1" />
-          </span>
-          <span className="categoryTitle">Categories</span>
-        </div>
-        <div className="categoryUnderTxtIcon2">
-          <span>View All</span>
-          <span>
-            <FaAngleRight id="categoryIcon2" />
-          </span>
-        </div>
-      </div>
+      <IconTxtHeader text="Categories" Icon={<BsFillGridFill />} />
       <div className="firstCategory">
         {firstCategories?.map((item) => {
           return (

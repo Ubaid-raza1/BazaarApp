@@ -1,0 +1,32 @@
+
+.IconTxtHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+
+.IconTxts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.IconTxt {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.TxtHeaderIcon {
+    display: flex;
+    align-items: center;
+}
+
+.TxtHeaderIconUnder {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #7D879C;
+    cursor: pointer;
+}

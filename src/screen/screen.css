@@ -1,99 +1,18 @@
-.cardMain {
+.carMain {
     display: flex;
     margin: 0 35px;
 }
 
-.cardCard {
+.carCard {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
 }
 
-.cardHeader {
+.carHeader {
     display: flex;
     justify-content: space-between;
 }
-
-.cardTitle {
-    padding-left: 26px;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.cardTxtIcon {
-    cursor: pointer;
-    padding-right: 5px;
-    display: flex;
-    align-items: center;
-    color: #7D879C
-}
-
-.cardButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
-    border-radius: 9px;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
-    width: 52%;
-    padding: 1.25rem;
-}
-
-.cardBtn1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.cardBtn1>Button {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 600;
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.75rem;
-    background-color: #F6F9FC;
-    color: black;
-    border: none;
-
-}
-
-.cardBtn2>Button {
-    font-weight: 600;
-    margin-top: 64px;
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background-color: #F6F9FC;
-    color: black;
-    border: none;
-}
-
-.cardBtn1>Button:hover {
-    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
-}
-
-.cardBtn2>Button:hover {
-    box-shadow: 0px 8px 45px rgb(3 0 71 / 9%);
-}
-
-
-
-.cardHeaderTxt {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-}
-
-.cardHeaderTxt>h3 {
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.cardSlash {
-    color: silver;
-}
-
 
 
 /* categories page css */
@@ -178,6 +97,7 @@
 }
 
 /* forMoreMain page css */
+
 /* footerMain page css */
 .footerMain {
     padding: 16px 24px;
@@ -322,54 +242,16 @@
 
 /* footerMain page css */
 
-/* flash Deal css*/
-
+/* flashDeal css */
 .flashDeal {
     display: flex;
 }
 
-.flashDealHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-}
-
-#chargerIcon {
-    font-size: 20px;
-    color: #D23F57;
-}
-
-.flashDealTxt {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.flashDealUnderTxt {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.flashDealUnderIcon {
-    display: flex;
-    align-items: center;
-}
-
-.flashDealTxtIcon {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    color: #7D879C;
-    cursor: pointer;
-}
-
-/* flash Deal css*/
+/* flashDeal css */
 
 /* top Categories css */
-.topCategoriesImgSection>img {
-    /* background: rgba(0, 0, 0, 0.3); */
-
+.topCategiesImgTxt>img {
+   
     width: 90%;
     border-radius: 10px;
     cursor: pointer;
@@ -379,12 +261,12 @@
     display: block; */
 }
 
-.topCategoriesImgSection>img:hover {
-    filter: brightness(65%) ;
+.topCategiesImgTxt>img:hover {
+    filter: brightness(65%);
     opacity: 1;
 }
 
-.topCategoriesImgSection {
+.topCategiesImgTxt {
     position: relative;
     border-radius: 10px;
     width: 90%;
@@ -395,8 +277,6 @@
     background-color: #fff;
 
 }
-
-
 
 .topCategoriesTxt {
     position: absolute;
@@ -432,41 +312,47 @@
 
 /* Top Rating Card css*/
 
-.topRatingCard{
-   display: flex;
-   justify-content: space-around;
+.topRatingCard {
+    display: flex;
+    justify-content: space-around;
 }
-.topRating{
+
+.topRating {
     margin: 20px;
     padding: 16px;
     background-color: #fff;
     border-radius: 10px;
 }
-.featureCard{
+
+.featureCard {
     display: flex;
     padding: 20px;
     background-color: #fff;
     margin: 20px;
     border-radius: 10px;
 }
-.topRatingOrFeaturesBrands{
+
+.topRatingOrFeaturesBrands {
     display: flex;
 }
+
 /* Top Rating Card css*/
 
 /* newArival css */
-.newArival{
+.newArival {
     display: flex;
     background-color: #fff;
     padding: 16px;
     border-radius: 10px;
     margin: 20px;
 }
+
 /* newArival css */
 
 /* bigDiscountCard css */
-.bigDiscountCard{
+.bigDiscountCard {
     display: flex;
     margin: 20px;
 }
+
 /* bigDiscountCard css */
