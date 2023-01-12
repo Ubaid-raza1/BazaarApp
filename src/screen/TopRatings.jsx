@@ -9,7 +9,7 @@ const className = { cardWidth: "featureBrandCard" };
 const TopRatings = () => {
   return (
     <div className="topRatingOrFeaturesBrands">
-      <div>
+      <div className="topRatingMain">
         <IconTxtHeader text="Top Rating" Icon={""} />
         <div className="topRating">
           <div className="topRatingCard">
@@ -17,7 +17,7 @@ const TopRatings = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="featuredBrandsMain">
         <IconTxtHeader text="Featured Brands" Icon={""} />
         <div className="FeaturesBrands">
           <div className="featureBrand">

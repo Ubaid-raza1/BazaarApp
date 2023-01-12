@@ -6,11 +6,13 @@ import "./screen.css";
 import BrandAndShop from "../Components/cardButtons/BrandAndShop";
 
 const id = { cardWidth: "cardWidth3" };
+const cardButtonWidth = { widthButton: "widthButtondSec1" };
+
 
 const MobilePhones = () => {
   return (
-    <div className="carMain">
-      <BrandAndShop brand={mobilePhoneBrand} shop={mobilePhoneShop} />
+    <div className="carMain mobile">
+      <BrandAndShop brand={mobilePhoneBrand} shop={mobilePhoneShop} id={cardButtonWidth}/>
       <div>
         <IconTxtHeader text="Mobile Phone" />
         <div className="carCard">

@@ -4,7 +4,7 @@ import "./card.css";
 const SimpleCard = ({ productData }) => {
   console.log(productData);
   return (
-    <div className="simpleCardMain">
+    <>
       {productData?.map((item) => {
         return (
           <div className="simpleCard">
@@ -20,7 +20,7 @@ const SimpleCard = ({ productData }) => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 

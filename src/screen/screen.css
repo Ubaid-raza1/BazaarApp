@@ -1,6 +1,6 @@
 .carMain {
     display: flex;
-    margin: 0 35px;
+    padding: 0 38px !important;
 }
 
 .carCard {
@@ -74,10 +74,10 @@
     display: flex;
     align-items: center;
     width: 15%;
-    padding: 4px;
+    /* padding: 4px; */
     cursor: pointer;
     /* margin: 20px ; */
-    margin: 24px 20px 0 20px;
+    /* margin: 24px 20px 0 20px; */
     border-radius: 10px;
 }
 
@@ -245,20 +245,17 @@
 /* flashDeal css */
 .flashDeal {
     display: flex;
+    justify-content: space-evenly;
 }
 
 /* flashDeal css */
 
 /* top Categories css */
 .topCategiesImgTxt>img {
-   
     width: 90%;
     border-radius: 10px;
     cursor: pointer;
     height: auto;
-    /* transition: .5s ease;
-    backface-visibility: hidden;
-    display: block; */
 }
 
 .topCategiesImgTxt>img:hover {
@@ -270,12 +267,11 @@
     position: relative;
     border-radius: 10px;
     width: 90%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     padding: 12px 0px;
     background-color: #fff;
-
+    margin: 0 22px;
 }
 
 .topCategoriesTxt {
@@ -318,22 +314,25 @@
 }
 
 .topRating {
-    margin: 20px;
-    padding: 16px;
+    /* margin: 20px; */
+    /* padding: 16px; */
     background-color: #fff;
     border-radius: 10px;
 }
 
 .featureCard {
     display: flex;
-    padding: 20px;
     background-color: #fff;
-    margin: 20px;
     border-radius: 10px;
 }
 
 .topRatingOrFeaturesBrands {
     display: flex;
+}
+
+.featuredBrandsMain,
+.topRatingMain {
+    padding: 0 22px;
 }
 
 /* Top Rating Card css*/
@@ -344,7 +343,7 @@
     background-color: #fff;
     padding: 16px;
     border-radius: 10px;
-    margin: 20px;
+    margin: 0 22px;
 }
 
 /* newArival css */
@@ -352,7 +351,33 @@
 /* bigDiscountCard css */
 .bigDiscountCard {
     display: flex;
-    margin: 20px;
+    padding: 0 12px;
 }
 
 /* bigDiscountCard css */
+
+/* all classes max width set */
+.bigDiscountMain,
+.mainCategories,
+.flashDealMain,
+.secondImgMain,
+.forMoreMain,
+.newArivalMain,
+.simpleCardMain,
+.topCategoriesMain,
+.topRatingOrFeaturesBrands,
+.opticsWatch,
+.mobile,
+.car {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 16px;
+    padding-bottom: 80px;
+    /* margin-bottom: 80px; */
+}
+.opticsWatch,
+.mobile,
+.car{
+    margin-bottom: 80px;
+}
+/* all classes max width set */

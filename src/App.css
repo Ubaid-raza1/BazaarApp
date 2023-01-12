@@ -14,12 +14,12 @@
 
 .second {
     background-color: #f6f9fc;
-    padding: 24px 24px;
+    /* padding: 24px 24px; */
 }
 
 .secondImg{
-    display: flex;
-    justify-content: space-evenly;
+    /* display: flex;
+    justify-content: space-evenly; */
 }
 .footer{
     color: #fff;

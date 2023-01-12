@@ -1,6 +1,6 @@
 import React from "react";
 
-const FeatureBrandCards = ({ productData,className }) => {
+const FeatureBrandCards = ({ productData, className }) => {
   return (
     <>
       {productData?.map((item) => {
@@ -9,8 +9,12 @@ const FeatureBrandCards = ({ productData,className }) => {
             <img src={item?.img} alt="" />
             <div className="featureBrandTxt">{item?.text}</div>
             <div className="featureBrandTxt">{item?.price}</div>
-            <div className="featureBrandTxt">{item?.discountPrice}</div>
-            <div className="featureBrandTxt">{item?.originalPrice}</div>
+            <div className="bigDiscountPrizeList">
+              <span>{item?.discountPrice}</span>
+              <span>
+                <s>{item?.originalPrice}</s>
+              </span>
+            </div>
           </div>
         );
       })}

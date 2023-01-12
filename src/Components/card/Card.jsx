@@ -1,10 +1,8 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
 import Button from "../button/Button";
 import "./card.css";
 import { FaPlus } from "react-icons/fa";
-// BsFillEyeFill fontAwesome this icon use eye icon
-// BsFillHeartFill fontAwesome this icon use heart icon
+import StarIcons from "../starIcons/StarIcons";
 
 const Card = ({ productData, id }) => {
   return (
@@ -24,11 +22,7 @@ const Card = ({ productData, id }) => {
               <div className="cardTxt">
                 <span>{item?.title}</span>
                 <span className="cardStar">
-                  <FaStar id="cardStar" />
-                  <FaStar id="cardStar" />
-                  <FaStar id="cardStar" />
-                  <FaStar id="cardStar" />
-                  <FaStar id="cardStar" />
+                  <StarIcons />
                 </span>
                 <div>
                   <span id="dolarTxt">{item?.prizeCurrent}</span>

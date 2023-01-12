@@ -9,8 +9,8 @@ const id = { cardWidth: "cardWidth3" };
 
 const Cars = () => {
   return (
-    <div className="carMain">
-      <CardButtons buttonProducts={carBtnTxtImg}/>
+    <div className="carMain car">
+      <CardButtons buttonProducts={carBtnTxtImg} />
       <div>
         <IconTxtHeader text="Car" />
         <div className="carCard">

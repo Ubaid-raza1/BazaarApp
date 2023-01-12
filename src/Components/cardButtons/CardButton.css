@@ -7,7 +7,7 @@
     border-radius: 9px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
-    width: 52%;
+    width: 58%;
     padding: 1.25rem;
 }
 
@@ -16,6 +16,13 @@
     flex-direction: column;
 }
 
+#widthButtondSec1 {
+    width: 85%;
+}
+
+#widthButtondSec2 {
+    width: 90%;
+}
 
 .cardBtn1>Button {
     display: flex;

@@ -5,7 +5,7 @@ import { simpleCardData } from "../data/SimpleCard";
 const SimpleCards = () => {
  
   return (
-    <div>
+    <div className="simpleCardMain">
       <SimpleCard productData={simpleCardData} />
     </div>
   );

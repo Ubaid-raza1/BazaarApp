@@ -10,11 +10,16 @@ import {
 import "./screen.css";
 
 const id = { cardWidth: "cardWidth3" };
+const cardButtonWidth = { widthButton: "widthButtondSec2" };
 
 const OpticsWatch = () => {
   return (
-    <div className="carMain">
-     <BrandAndShop brand={opticsWatchBrand} shop={opticsWatchShop} />
+    <div className="carMain opticsWatch">
+      <BrandAndShop
+        brand={opticsWatchBrand}
+        shop={opticsWatchShop}
+        id={cardButtonWidth}
+      />
       <div>
         <IconTxtHeader text="Optics / Watch" />
         <div className="carCard">

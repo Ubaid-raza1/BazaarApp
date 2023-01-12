@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Button from "../button/Button";
 
-const BrandAndShop = ({ brand, shop }) => {
+const BrandAndShop = ({ brand, shop, id }) => {
   const [toggle, setToggle] = useState(true);
   const Brand = () => setToggle(true);
   const Shop = () => setToggle(false);
+  console.log(id.widthButton);
   return (
-    <div className="cardButton" style={{ width: "86%" }}>
+<div className="cardButton" id={id.widthButton}>
       <div className="cardHeaderTxt">
         <h3
           className="cardBrandTxt"

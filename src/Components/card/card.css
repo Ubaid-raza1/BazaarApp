@@ -4,7 +4,6 @@
     padding-top: 4px;
     padding-bottom: 4px;
     background-color: #fff;
-    margin: 24px 0 0 24px;
 }
 
 #cardWidth3 {
@@ -87,10 +86,7 @@
     background-color: rgba(210, 63, 87, 0.4)
 }
 
-#cardStar {
-    margin: 3px;
-    color: #faaf00;
-}
+
 
 #dolarTxt {
     margin-right: 10px;
@@ -160,8 +156,8 @@
 
 .simpleCardMain {
     display: flex;
-    justify-content: space-evenly;
-    padding: 24px 0;
+    /* justify-content: space-evenly;
+    padding: 24px 0; */
 }
 
 .RatingCard>img {
@@ -230,5 +226,7 @@
     box-sizing: 10px;
     border-radius: 10px;
 }
-
+.bigDiscountPrizeList>span{
+    padding: 10px;
+}
 /* bigDiscount css */
