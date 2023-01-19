@@ -1,12 +1,12 @@
 .carMain {
     display: flex;
-    padding: 0 38px !important;
 }
 
 .carCard {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .carHeader {
@@ -60,12 +60,13 @@
 
 .firstCategory {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .secondCategory {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .CategoryUnder {
@@ -74,11 +75,9 @@
     display: flex;
     align-items: center;
     width: 15%;
-    /* padding: 4px; */
     cursor: pointer;
-    /* margin: 20px ; */
-    /* margin: 24px 20px 0 20px; */
     border-radius: 10px;
+    margin: 0 10px;
 }
 
 .CategoryUnder:hover {
@@ -106,7 +105,7 @@
 
 .footerDiv {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 80px 0;
 }
 
@@ -240,12 +239,21 @@
     color: #fff;
 }
 
+.footerTxtIcon,
+.footerAbout,
+.footerCustomerCare,
+.footerContactUs {
+    padding: 0 35px;
+}
+
+
 /* footerMain page css */
 
 /* flashDeal css */
 .flashDeal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 /* flashDeal css */
@@ -311,6 +319,7 @@
 .topRatingCard {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 
 .topRating {
@@ -324,6 +333,7 @@
     display: flex;
     background-color: #fff;
     border-radius: 10px;
+    padding-top: 13px;
 }
 
 .topRatingOrFeaturesBrands {
@@ -340,17 +350,25 @@
 /* newArival css */
 .newArival {
     display: flex;
+    flex-wrap: wrap;
     background-color: #fff;
     padding: 16px;
     border-radius: 10px;
     margin: 0 22px;
 }
 
+.featureBrandCard {
+    /* width: 16.66%; */
+}
+
+
 /* newArival css */
 
 /* bigDiscountCard css */
 .bigDiscountCard {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0 12px;
 }
 
@@ -373,11 +391,241 @@
     margin: auto;
     padding: 0 16px;
     padding-bottom: 80px;
-    /* margin-bottom: 80px; */
 }
+
 .opticsWatch,
 .mobile,
-.car{
-    margin-bottom: 80px;
+.car {
+    padding: 0 38px 80px 38px;
 }
+
+.mainCategories {
+    margin: 0 35.8px;
+}
+
+.simpleCardMain {
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: center;
+    padding: 0 38px 80px 38px;
+}
+
+.secondImg {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.secondImgDiv>img {
+    width: 98.5%;
+    height: 100%;
+    padding: 24px 0 0 24px;
+}
+
 /* all classes max width set */
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .newArival {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .topCategories {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topCategiesImgTxt {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .topRatingOrFeaturesBrands {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .featureCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secondImg {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1255px) {
+    .bigDiscount {
+        width: 31.555%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .bigDiscount {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .featureBrandCard {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .topRatingCard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .bigDiscountCard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bigDiscount {
+        width: 31.12%;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .bigDiscount {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .bigDiscount {
+        width: 30.9%;
+    }
+}
+
+@media only screen and (max-width: 877px) {
+    .bigDiscount {
+        width: 30.7777%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .bigDiscount {
+        width: 47.22%;
+    }
+}
+
+@media only screen and (max-width: 774px) {
+    .bigDiscount {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .bigDiscountCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bigDiscount {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+
+    .simpleCardMain {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 0;
+    }
+
+    .simpleCard {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+
+
+    .simpleCard {
+        width: 47.8888%;
+    }
+}
+
+@media only screen and (max-width: 1022px) {
+    .simpleCard {
+        width: 47.7777%;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .simpleCard {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+
+    .firstCategory,
+    .secondCategory {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .firstCategory {
+        padding-bottom: 0
+    }
+
+    .CategoryUnder {
+        width: 31%;
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .CategoryUnder {
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .CategoryUnder {
+        width: 46%;
+    }
+}
+@media only screen and (max-width: 603px) {
+    .CategoryUnder {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .firstCategory,.secondCategory {
+        display: flex;
+        flex-direction: column;
+    }
+    .CategoryUnder {
+        width: 97%;
+    }
+}
+
+
+
+
+
+
+/* responsive */

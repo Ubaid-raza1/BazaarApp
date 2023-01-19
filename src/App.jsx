@@ -2,6 +2,7 @@ import React from "react";
 import FirstNavbar from "./Components/navbars/FirstNavbar";
 import SecondNavbar from "./Components/navbars/SecondNavbar";
 import ThirdNavbar from "./Components/navbars/thirdNavbar";
+import Navbar from "./Components/navbars/Navbar"
 import "./App.css";
 import FirstSlider from "./Components/sliders/FirstSlider";
 import Cars from "./screen/Cars";
@@ -24,6 +25,7 @@ const App = () => {
       <div>
         <div className="navbars">
           <FirstNavbar />
+          <Navbar />
           <SecondNavbar />
           <ThirdNavbar />
         </div>

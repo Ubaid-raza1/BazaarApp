@@ -7,11 +7,21 @@
 }
 
 #cardWidth3 {
-    width: 30%;
+    width: 30.88%;
+    margin: 24px 0 0 24px;
+
+
+}
+
+#cardWidth2 {
+    width: 22.69%;
+    margin: 24px 0 0 24px;
 }
 
 #cardWidth1 {
-    width: 22.7%;
+    width: 22.69%;
+    margin: 9px 9px;
+    /* margin: 24px 0 0 24px; */
 }
 
 
@@ -125,13 +135,14 @@
 }
 
 .simpleCard {
-    width: 23%;
+    width: 55%;
     text-align: center;
     background-color: #fff;
     padding: 2.4rem;
     border-radius: 10px;
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
     cursor: pointer;
+    margin: 0 10px;
 }
 
 .simpleCard:hover {
@@ -154,11 +165,6 @@
     margin: 8px;
 }
 
-.simpleCardMain {
-    display: flex;
-    /* justify-content: space-evenly;
-    padding: 24px 0; */
-}
 
 .RatingCard>img {
     width: 100%;
@@ -188,8 +194,8 @@
 
 /* featureBrandCard css */
 
-
 .featureBrandCard>img {
+    border-radius: 10%;
     width: 100%;
     padding: 0 10px;
     cursor: pointer;
@@ -217,16 +223,135 @@
 
 .bigDiscount>img:hover {
     filter: drop-shadow(1px 2px 6px black);
-   
+
 }
 
 .bigDiscount {
+    width: 15%;
     background-color: #fff;
     margin: 0 10px;
     box-sizing: 10px;
     border-radius: 10px;
 }
-.bigDiscountPrizeList>span{
+
+.bigDiscountPrizeList>span {
     padding: 10px;
 }
+
 /* bigDiscount css */
+
+
+
+/* responsive card */
+@media only screen and (max-width: 1298px) {
+    #cardWidth3 {
+        width: 46.5%;
+        ;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    #cardWidth3 {
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 1045px) {
+    .cardButton {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    #cardWidth2 {
+        width: 30.22%;
+    }
+
+}
+
+@media only screen and (max-width: 802px) {
+    #cardWidth2 {
+        width: 45.1%;
+    }
+}
+
+@media only screen and (max-width: 521px) {
+    #cardWidth2 {
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+    .flashDeal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #cardWidth1 {
+        width: 45.3333%;
+    }
+
+    .RatingCard {
+        width: 48.3333%;
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+    .flashDeal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cardWidth1,#cardWidth3 {
+        width: 95%;
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    .topRatingCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RatingCard {
+        width: 100%;
+    }
+
+    .carCard {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .forMoreCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #cardWidth2{
+        width: 92%;
+        margin: 0;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    .topRatingCard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* responsive card */

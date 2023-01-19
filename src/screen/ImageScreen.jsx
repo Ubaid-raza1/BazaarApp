@@ -6,7 +6,11 @@ const ImageScreen = () => {
     <div className="secondImgMain">
       <div className="secondImg">
         {imagesSec.map((item) => {
-          return <img src={item?.img} alt="logo" />;
+          return (
+            <div className="secondImgDiv">
+              <img src={item?.img} alt="logo" />
+            </div>
+          );
         })}
       </div>
     </div>

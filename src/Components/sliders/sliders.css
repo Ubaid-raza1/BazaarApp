@@ -13,8 +13,6 @@
 .fristSlider {
     display: flex;
     justify-content: center;
-    /* padding: 32px 24px;
-    margin: 0px 34px 0px 34px; */
 }
 
 .sliderTxt {
@@ -22,7 +20,6 @@
     flex-direction: column;
     align-self: center;
     padding: 24px 0px 0px 24px;
-    /* word-break: break-all; */
 }
 
 .sliderTxt>h1 {
@@ -45,8 +42,7 @@
 }
 
 .firstBtn>Button {
-    padding: 10px 24px;
-    width: 38%;
+    padding: 10px 50px;
     color: #fff;
     background-color: #D23F57;
     border: 0;
@@ -62,7 +58,7 @@
 .sliderImg>img {
     max-height: 400px;
     display: block;
-    max-width: 100%;   
+    max-width: 100%;
 }
 
 
@@ -90,3 +86,13 @@
     height: 16px;
     margin: 4px;
 }
+
+/* resposive */
+@media only screen and (max-width: 600px) {
+    .fristSlider {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* resposive */

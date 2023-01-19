@@ -1,17 +1,12 @@
 import React from "react";
 import IconButton from "../button/IconButton";
 import NavbarHelper from "./NavbarHelper";
-import NavbarWrapper from "./NavbarWrapper";
-
-const className = {
-  navMain: "thirdNavBar",
-};
 
 const thirdNavbar = () => {
   return (
-    <NavbarWrapper className={className}>
-       <div className="thirdNavRightSide">
-        <IconButton className="thirdNavBtn"/>
+    <div className="thirdNavBar">
+      <div className="thirdNavRightSide">
+        <IconButton className="thirdNavBtn" />
       </div>
       <div className="thirdNavLeftSide">
         <NavbarHelper Text="Home" />
@@ -21,8 +16,7 @@ const thirdNavbar = () => {
         <NavbarHelper Text="User Account" />
         <NavbarHelper Text="Vendor Account" />
       </div>
-     
-    </NavbarWrapper>
+    </div>
   );
 };
 

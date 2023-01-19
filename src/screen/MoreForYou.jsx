@@ -2,7 +2,7 @@ import React from "react";
 import { moreItem } from "../data/MoreItem";
 import Card from "../Components/card/Card";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
-const id = { cardWidth: "cardWidth1" };
+const id = { cardWidth: "cardWidth2" };
 const MoreForYou = () => {
   return (
     <div className="forMoreMain">
