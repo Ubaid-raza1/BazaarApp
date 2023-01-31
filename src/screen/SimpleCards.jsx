@@ -1,5 +1,5 @@
 import React from "react";
-import SimpleCard from "../Components/card/SimpleCard";
+import SimpleCard from "../Components/cards/SimpleCard";
 import { simpleCardData } from "../data/SimpleCard";
 
 const SimpleCards = () => {

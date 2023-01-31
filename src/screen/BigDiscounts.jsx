@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureBrandCards from "../Components/card/FeatureBrandCards"
+import FeatureBrandCards from "../Components/cards/FeatureBrandCards"
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import { bigDiscount } from "../data/BigDiscount";
 

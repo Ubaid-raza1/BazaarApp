@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Components/card/Card";
+import Card from "../Components/cards/Card";
 import BrandAndShop from "../Components/cardButtons/BrandAndShop";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import {

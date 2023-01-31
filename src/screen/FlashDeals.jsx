@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Components/card/Card";
+import Card from "../Components/cards/Card";
 import { flashDeal } from "../data/FlashDeal";
 import "./screen.css";
 import { BsLightningChargeFill } from "react-icons/bs";

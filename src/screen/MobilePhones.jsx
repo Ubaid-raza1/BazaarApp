@@ -1,6 +1,6 @@
 import React from "react";
 import { mobilePhone,mobilePhoneBrand,mobilePhoneShop } from "../data/MobilePhone";
-import Card from "../Components/card/Card";
+import Card from "../Components/cards/Card";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import "./screen.css";
 import BrandAndShop from "../Components/cardButtons/BrandAndShop";

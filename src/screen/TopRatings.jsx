@@ -1,10 +1,13 @@
 import React from "react";
-import FeatureBrandCards from "../Components/card/FeatureBrandCards";
-import TopRatingCard from "../Components/card/TopRatingCard";
+import FeatureBrandCards from "../Components/cards/FeatureBrandCards";
+import TopRatingCard from "../Components/cards/TopRatingCard";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import { featuresBrands } from "../data/TopRatingOrFeatureBrands";
 
-const className = { cardWidth: "featureBrandCard" };
+const className = {
+  cardWidth: "featureBrandCard",
+  imageWidth: "fetureBrandImgWidth",
+};
 
 const TopRatings = () => {
   return (

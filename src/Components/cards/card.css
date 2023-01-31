@@ -194,14 +194,26 @@
 
 /* featureBrandCard css */
 
-.featureBrandCard>img {
+.featureBrandCard {
     border-radius: 10%;
-    width: 100%;
     padding: 0 10px;
     cursor: pointer;
 }
 
+#fetureBrandImgWidth{
+    width: 100%;
+}
+#newArivalImgWidth{
+    width: 100%;
+    padding: 0 10px;
+}
+
 .featureBrandCard>img:hover {
+    filter: brightness(65%);
+    opacity: 1;
+}
+
+.featureBrandCard2>img:hover {
     filter: brightness(65%);
     opacity: 1;
 }
@@ -305,7 +317,8 @@
         flex-direction: column;
     }
 
-    #cardWidth1,#cardWidth3 {
+    #cardWidth1,
+    #cardWidth3 {
         width: 95%;
         margin: 0;
         margin: 10px 0;
@@ -326,13 +339,14 @@
     }
 
 
-    .forMoreCards{
+    .forMoreCards {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    #cardWidth2{
-        width: 92%;
+
+    #cardWidth2 {
+        width: 100%;
         margin: 0;
         margin: 10px 0;
     }

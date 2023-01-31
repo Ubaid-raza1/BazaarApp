@@ -1,6 +1,6 @@
 import React from "react";
 import { moreItem } from "../data/MoreItem";
-import Card from "../Components/card/Card";
+import Card from "../Components/cards/Card";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 const id = { cardWidth: "cardWidth2" };
 const MoreForYou = () => {
