@@ -246,7 +246,9 @@
     padding: 0 35px;
 }
 
-
+#smallTxt{
+    font-size: 12px;
+}
 /* footerMain page css */
 
 /* flashDeal css */
@@ -532,6 +534,10 @@
     .bigDiscount {
         width: 47.22%;
     }
+
+    .featureBrandCard2 {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 774px) {
@@ -540,11 +546,32 @@
     }
 }
 
-@media only screen and (max-width: 599px) {
-    /* .bigDiscountCard {
+@media only screen and (max-width: 702px) {
+    .footerDiv {
         display: flex;
         flex-direction: column;
-    } */
+    }
+
+    .footerIcon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerIconPlayStore {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .firstNavBtnSec,
+    .firstNavIcons {
+        display: none;
+    }
+
+    .firstNavPlusIcon {
+        display: block;
+    }
 
     .bigDiscount {
         width: 97%;
@@ -571,7 +598,7 @@
 
     .opticsWatch {
         padding: 0 10px 80px 10px;
-        /* padding: 0; */
+
     }
 
     .secondImgDiv>img {
@@ -582,8 +609,33 @@
     .mobile {
         padding: 0 14px 80px 14px;
     }
-    .carMain{
+
+    .carMain {
         display: block;
+    }
+
+    .firstCategory,
+    .secondCategory {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CategoryUnder {
+        width: 96.9% !important;
+    }
+
+    .featureBrandCard2 {
+        width: 100%;
+    }
+
+    .car {
+        padding: 0 12px;
+        padding-bottom: 80px;
+    }
+
+    .footerMain {
+        padding: 16px 0 !important;
+        margin: 0;
     }
 }
 
@@ -649,22 +701,12 @@
 
 @media only screen and (max-width: 603px) {
     .CategoryUnder {
-        width: 45%;
+        width: 45.9%;
     }
+
 }
 
-@media only screen and (max-width: 599px) {
 
-    .firstCategory,
-    .secondCategory {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .CategoryUnder {
-        width: 97%;
-    }
-}
 
 
 

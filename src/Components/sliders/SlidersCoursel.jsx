@@ -35,13 +35,6 @@ const SlidersCoursel = ({ children, width }) => {
         })}
       </div>
       <div className="indicator">
-        {/* <button
-          onClick={() => {
-            UpdateIndex(activeIndex - 1);
-          }}
-        >
-          Prev
-        </button> */}
         {React.Children.map(children, (child, index) => {
           return (
             <input
@@ -54,13 +47,6 @@ const SlidersCoursel = ({ children, width }) => {
             />
           );
         })}
-        {/* <button
-          onClick={() => {
-            UpdateIndex(activeIndex + 1);
-          }}
-        >
-          Next
-        </button> */}
       </div>
     </div>
   );

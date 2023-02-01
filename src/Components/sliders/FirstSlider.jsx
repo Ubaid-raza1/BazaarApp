@@ -12,7 +12,7 @@ const firstSlider = () => {
   return (
     <div >
       <SlidersCoursel>
-        <SlidersItems >
+        <SlidersItems>
           <SliderHelper head={head} txt={text} />
         </SlidersItems>
         <SlidersItems>

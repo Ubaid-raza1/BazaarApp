@@ -32,7 +32,7 @@ const Footer = () => {
                   <img src={playstore} alt="" />
                 </div>
                 <div id="footerPlayStoreTxt">
-                  <span>Get it on</span>
+                  <span id="smallTxt">Get it on</span>
                   <span>Google Play</span>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                   <img src={appStore} alt="" />
                 </div>
                 <div id="footerPlayStoreTxt">
-                  <span>Get it on</span>
+                  <span id="smallTxt">Get it on</span>
                   <span>App Store</span>
                 </div>
               </div>

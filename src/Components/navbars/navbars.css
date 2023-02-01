@@ -5,7 +5,8 @@
     justify-content: space-between;
     background-color: #2B3445;
     color: #fff;
-    padding: 8px 60px;
+    padding: 8px 24px;
+   
 }
 
 .firstNavLeft {
@@ -46,17 +47,22 @@
     gap: 10px;
 }
 
+.firstNavPlusIcon {
+    display: none;
+}
+
 /* first navbar */
 
 /* ***************** */
 
 /* second navbar */
 .secondNavBar {
-    z-index: 3;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 80px;
+    /* z-index: 2;
+    position: fixed; */
 }
 
 .secondNavIconSec {
