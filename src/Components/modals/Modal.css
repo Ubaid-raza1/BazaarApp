@@ -1,0 +1,465 @@
+.DropDownModalMain,
+.simpleDropDownModalMain,
+.DropDownModalTwoMain,
+.modalsMain,
+.FourComponentModalMain,
+.ModalsTwoMain,
+.fullScreen {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.DropDownModal,
+.simpleDropDownModal,
+.DropDownModalTwo,
+.modal,
+.FourComponentModal,
+.Page,
+.ModalsTwoUserAccount,
+.ModalsTwoVendorAccount,
+.Sale,
+.Vendor,
+.Shop,
+.Orders,
+.Profiles,
+.Address,
+.Support,
+.Products,
+.Order,
+.ModalsTwoPage {
+    overflow: auto;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    background-color: #FFFFFF;
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+}
+
+.DropDownModal {
+    position: absolute;
+    margin-top: 11px;
+    width: 57rem;
+    left: 100%;
+    margin-left: 15px;
+}
+
+.simpleDropDownModal {
+    position: absolute;
+    margin-top: 11px;
+    left: 100%;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.DropDownModalTwo {
+    position: absolute;
+    margin-top: 11px;
+    left: 42rem;
+    width: 40rem;
+}
+
+.modal {
+    position: absolute;
+    top: 20px;
+    right: 82%;
+    width: 25%;
+
+}
+
+.FourComponentModal {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 24%;
+    width: 65rem;
+}
+
+.ModalsTwoPage {
+    position: absolute;
+    top: 20px;
+    right: 29%;
+    width: 29%;
+
+}
+
+.ModalsTwoUserAccount {
+    position: absolute;
+    top: 20px;
+    right: 16%;
+    width: 29%;
+
+}
+
+.ModalsTwoVendorAccount {
+    position: absolute;
+    top: 20px;
+    left: 76%;
+    width: 29%;
+}
+
+.Sale {
+    position: absolute;
+    left: 44.666666%;
+    top: 190px;
+    width: 16%;
+
+}
+
+.Vendor {
+    position: absolute;
+    left: 44.666666%;
+    top: 230px;
+    width: 16%;
+
+}
+
+.Shop {
+    position: absolute;
+    left: 44.666666%;
+    top: 270px;
+    width: 16%;
+
+}
+
+.Orders {
+    position: absolute;
+    left: 52%;
+    top: 190px;
+    width: 16%;
+
+}
+
+.Profiles {
+    position: absolute;
+    left: 52%;
+    top: 230px;
+    width: 16%;
+
+}
+
+.Address {
+    position: absolute;
+    left: 52%;
+    top: 270px;
+    width: 16%;
+
+}
+
+.Support {
+    position: absolute;
+    left: 52%;
+    top: 310px;
+    width: 16%;
+
+}
+
+.Products {
+    position: absolute;
+    left: 64%;
+    top: 230px;
+    width: 16%;
+}
+
+.Order {
+    position: absolute;
+    left: 64%;
+    top: 270px;
+    width: 16%;
+}
+
+
+
+.fullScreenLeft {
+    position: absolute;
+    left: -36.2rem;
+    margin-top: 16px;
+    width: 31%;
+    border-right: 1px solid #ccc;
+    height: 38rem;
+    overflow: auto;
+    z-index: 98;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ccc;
+}
+
+.fullScreenRight {
+    position: absolute;
+    margin-top: 16px;
+    left: -19.2rem;
+    width: 31%;
+    height: 38rem;
+    overflow: auto;
+    z-index: 98;
+    background-color: #FFFFFF;
+    width: 81.3vw;
+    padding-top: 46px;
+    padding-left: 47px;
+    border-bottom: 1px solid #ccc;
+}
+
+.FullScreenModalList ul {
+    margin: 5px 0;
+}
+
+.FullScreenModalList ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.FullScreenModalList ul>li:hover {
+    background-color: #FCE9EC;
+    color: #D23F57;
+
+}
+
+.FourComponentModalUnderMain {
+    display: flex;
+}
+
+.FourComponentModalUnderTxt {
+    width: 25%;
+}
+
+.FourComponentModalDivColor {
+    background-color: #F6F9FC;
+
+}
+
+.FourComponentModalUnderTxt ul>li {
+    color: #000000;
+    padding: 7px 0 7px 24px;
+    list-style: none;
+}
+
+
+.FourComponentModalUnderTxt ul {
+    margin: 20px 0;
+}
+
+.FourComponentModalUnderTxt ul li:first-child {
+    color: #000000 !important;
+    background: none;
+    font-weight: 700;
+}
+
+.FourComponentModalUnderTxt ul li:first-child:hover {
+    color: #000000 !important;
+    background: none;
+    font-weight: 700;
+}
+
+
+.FourComponentModalUnderTxt ul>li:hover {
+    color: #D23F57;
+    background-color: #f5f5f5;
+}
+
+.modalUnderTxtMain {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.modaldiv {
+    display: flex;
+}
+
+.modaldiv2 {
+    display: block;
+}
+
+.modalLeftSide {
+    width: 47vw;
+}
+
+.modalLeftSide2 {
+    width: 58vw;
+}
+
+.modalPara {
+    padding: 8px 0;
+}
+
+.modalheightSet {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    min-height: 410px;
+    justify-content: space-evenly;
+}
+
+.DropDownModalHeight {
+    display: flex;
+    flex-direction: column;
+    min-height: 206px;
+    justify-content: space-evenly;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+
+}
+
+.headerTxt {
+    font-weight: 700;
+}
+
+.headerTxt:hover {
+    color: #D23F57;
+}
+
+.modalPara:hover {
+    color: #D23F57;
+}
+
+.modalRightSide {
+    padding-top: 22px;
+}
+
+.modalRightSide2 {
+    padding-top: 0;
+}
+
+.modalRightSide2>img {
+    width: 100%;
+}
+
+.modalParaMain>p:first-child {
+    font-weight: 700;
+}
+
+.simpleDropDownModal ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.modal ul>li {
+    padding: 8px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.modal ul {
+    margin: 6px 0;
+}
+
+.modal ul>li:hover {
+    color: #D23F57;
+    background-color: #f5f5f5;
+}
+
+.simpleDropDownModal ul>li:hover {
+    color: #D23F57;
+    background-color: #f5f5f5;
+}
+
+.DropDownModalTwoRight {
+    display: flex;
+}
+
+.DropDownModalTwoRightTxt {
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#DropDownModalTwoRightHead {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#DropDownModalTwoRightPara1 {
+    font-size: 15px;
+}
+
+#DropDownModalTwoRightPara2 {
+    font-weight: 750;
+    border-bottom: 2px solid #D23F57;
+    width: 30%;
+}
+
+.DropDownModalTwoRightImg {
+    width: 50%;
+}
+
+.DropDownModalTwoRightImg>img {
+    width: 100%;
+}
+
+.liActive {
+    background-color: #f5f5f5;
+    color: #D23F57 !important;
+}
+
+.noActive {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.ModalsTwoList ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.ModalsTwoList ul>li:hover {
+    color: #D23F57;
+    background-color: #f5f5f5;
+
+}
+
+.ModalsTwoList {
+    margin: 8px 0;
+}
+
+.ModalsTowMainUnder ul>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.ModalsTowMainUnder ul>li:hover {
+    color: #D23F57;
+    background-color: #f5f5f5;
+}
+
+
+
+.FullScreenModalListTwo ul>li {
+    list-style: none;
+    font-size: 14px;
+    width: 19%;
+    padding-bottom: 10px;
+
+}
+
+.FullScreenModalListTwo ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 76vw;
+    padding-bottom: 4rem;
+}
+
+.FullScreenModalListTwo ul>li:hover {
+    color: #D23F57;
+}
+
+.FullScreenModalListTwoHeader {
+    padding-bottom: 20px;
+    font-weight: 700;
+}

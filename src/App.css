@@ -7,10 +7,12 @@
     font-weight: 400;
     line-height: 1.5;
 }
-.main{
+
+.main {
     max-width: 1400px;
     margin: auto;
 }
+
 .navbars {
     border-bottom: 1px solid #F3F5F9;
 }
@@ -20,11 +22,16 @@
     /* padding: 24px 24px; */
 }
 
-.secondImg{
+.secondImg {
     /* display: flex;
     justify-content: space-evenly; */
 }
-.footer{
+
+.footer {
     color: #fff;
     background-color: #222935;
+}
+
+ul>li {
+    text-decoration: none;
 }

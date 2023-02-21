@@ -1,23 +1,19 @@
 import React from "react";
-import IconButton from "../button/IconButton";
-import NavbarHelper from "./NavbarHelper";
+import DropDown from "../dropDown/DropDown";
+import ThirdNavHelpList from "../helper/navbarHelper/ThirdNavHelpList";
+import { DropDowntwo } from "../../data/DropDownData";
 
-const thirdNavbar = () => {
+const ThirdNavbar = () => {
   return (
     <div className="thirdNavBar">
       <div className="thirdNavRightSide">
-        <IconButton className="thirdNavBtn" />
+        <DropDown />
       </div>
       <div className="thirdNavLeftSide">
-        <NavbarHelper Text="Home" />
-        <NavbarHelper Text="Mega Menu" />
-        <NavbarHelper Text="Full Screen Menu" />
-        <NavbarHelper Text="Pages" />
-        <NavbarHelper Text="User Account" />
-        <NavbarHelper Text="Vendor Account" />
+        <ThirdNavHelpList element={DropDowntwo} />
       </div>
     </div>
   );
 };
 
-export default thirdNavbar;
+export default ThirdNavbar;

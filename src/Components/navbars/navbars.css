@@ -6,7 +6,7 @@
     background-color: #2B3445;
     color: #fff;
     padding: 8px 24px;
-   
+
 }
 
 .firstNavLeft {
@@ -225,13 +225,10 @@
 }
 
 .thirdNavLeftSide {
-    display: flex;
-    gap: 35px;
+    width: 56vw;
 }
 
-.thirdNavRightSide {
-    width: 33%;
-}
+
 
 .thirdNavBtn {
     display: inline-flex;
@@ -293,9 +290,9 @@
     margin-right: 10px;
 }
 
-.headerIconTxt:hover>.headertxt {
+/* .headerIconDiv:hover>.headertxt {
     color: rgb(210, 63, 87)
-}
+} */
 
 .headerIcon {
     display: flex;
@@ -305,11 +302,19 @@
     height: 1.333em;
 }
 
-.headerIconTxt {
+.headerIconTxt ul {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly
+}
+
+.headerIconTxt ul>li {
+    list-style: none;
     display: flex;
     align-items: center;
-
+    gap: 5px;
 }
+
 
 
 /* NavbarMain css*/

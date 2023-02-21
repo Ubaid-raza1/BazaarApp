@@ -73,7 +73,9 @@
 
 .CardBtn {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
 }
 
 .CardBtn>Button {
@@ -202,6 +204,7 @@
 
 #fetureBrandImgWidth{
     width: 100%;
+    border-radius: 10px;
 }
 #newArivalImgWidth{
     width: 100%;
@@ -234,7 +237,9 @@
 }
 
 .bigDiscount>img:hover {
-    filter: drop-shadow(1px 2px 6px black);
+    /* background: black; */
+    /* opacity: 0.1; */
+    /* filter: drop-shadow(1px 2px 6px black); */
 
 }
 

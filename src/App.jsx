@@ -1,7 +1,7 @@
 import React from "react";
 import FirstNavbar from "./Components/navbars/FirstNavbar";
 import SecondNavbar from "./Components/navbars/SecondNavbar";
-import ThirdNavbar from "./Components/navbars/thirdNavbar";
+import ThirdNavbar from "./Components/navbars/ThirdNavbar";
 import Navbar from "./Components/navbars/Navbar"
 import "./App.css";
 import FirstSlider from "./Components/sliders/FirstSlider";

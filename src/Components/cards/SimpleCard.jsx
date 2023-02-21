@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 
 const SimpleCard = ({ productData }) => {
-  console.log(productData);
+  // console.log(productData);
   return (
     <>
       {productData?.map((item) => {

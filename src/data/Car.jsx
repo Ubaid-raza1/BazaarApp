@@ -18,49 +18,55 @@ import ford from "../images/ford.webp";
 
 export const Car = [
   {
+    id:5,
     cardImg: loard,
     title: "lord 2019",
-    prizeCurrent: "$154.56",
+    prizeCurrent: "154.56",
     prizeClose: "$168.00",
     off: "8%",
     like: false,
   },
   {
+    id:6,
     cardImg: budi,
     title: "budi 2017",
-    prizeCurrent: "$212.44",
+    prizeCurrent: "212.44",
     prizeClose: "$212.44",
     off: "6%",
     like: false,
   },
   {
+    id:7,
     cardImg: Resela,
     title: "resla 2015",
-    prizeCurrent: "$90.90",
+    prizeCurrent: "90.90",
     prizeClose: "$101.00",
     off: "10%",
     like: false,
   },
   {
+    id:8,
     cardImg: Xorsche,
     title: "Xorsche 2018",
-    prizeCurrent: "$224.13",
+    prizeCurrent: "224.13",
     prizeClose: "$241.00",
     off: "7%",
     like: false,
   },
   {
+    id:9,
     cardImg: loard2018,
     title: "loard 2018",
-    prizeCurrent: "$219.48",
+    prizeCurrent: "219.48",
     prizeClose: "$236.00",
     off: "7%",
     like: false,
   },
   {
+    id:10,
     cardImg: loard2020,
     title: "loard 2020",
-    prizeCurrent: "$109.98",
+    prizeCurrent: "109.98",
     prizeClose: "$117.00",
     off: "6%",
     like: false,
@@ -73,23 +79,23 @@ export const carBtnTxtImg = [
     text: "Ferrari",
   },
   {
-    img:tesla,
-    text:"Tesla"
+    img: tesla,
+    text: "Tesla",
   },
   {
-    img:bmw,
-    text:"BMW"
+    img: bmw,
+    text: "BMW",
   },
   {
-    img:toyota,
-    text:"Toyota"
+    img: toyota,
+    text: "Toyota",
   },
   {
-    img:mini,
-    text:"Mini"
+    img: mini,
+    text: "Mini",
   },
   {
-    img:ford,
-    text:"Ford"
+    img: ford,
+    text: "Ford",
   },
 ];

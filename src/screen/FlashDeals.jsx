@@ -5,7 +5,6 @@ import "./screen.css";
 import { BsLightningChargeFill } from "react-icons/bs";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 
-
 const id = { cardWidth: "cardWidth1" };
 
 const FlashDeals = () => {
@@ -13,7 +12,9 @@ const FlashDeals = () => {
     <div className="flashDealMain">
       <IconTxtHeader Icon={<BsLightningChargeFill />} text="Flash Deal" />
       <div className="flashDeal">
-        <Card productData={flashDeal} id={id} />
+        {flashDeal?.map((item) => {
+          return <Card productData={item} id={id} itemId={item?.id} />;
+        })}
       </div>
     </div>
   );

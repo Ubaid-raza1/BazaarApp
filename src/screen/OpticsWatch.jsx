@@ -23,7 +23,9 @@ const OpticsWatch = () => {
       <div>
         <IconTxtHeader text="Optics / Watch" />
         <div className="carCard">
-          <Card productData={opticsWatch} id={id} />;
+          {opticsWatch.map((item) => {
+            return <Card productData={item} id={id} itemId={item?.id}/>;
+          })}
         </div>
       </div>
     </div>

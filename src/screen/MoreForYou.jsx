@@ -8,7 +8,9 @@ const MoreForYou = () => {
     <div className="forMoreMain">
       <IconTxtHeader text="More For You" />
       <div className="forMoreCards">
-        <Card productData={moreItem} id={id} />;
+        {moreItem.map((item) => {
+          return <Card productData={item} id={id} itemId={item?.id} />;
+        })}
       </div>
     </div>
   );
