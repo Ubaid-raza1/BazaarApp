@@ -6,7 +6,17 @@ let initialState = {
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOP:
-      return { ...state, cardCount: [action.payload, ...state.cardCount] };
+      console.log(state.cardCount);
+      // console.log(action?.payload?.productData)
+      // console.log("count===>",action?.payload?.count + 1)
+      return {
+        ...state,
+        cardCount: [action?.payload, ...state?.cardCount]
+          .filter((item, i, arr) => {
+            return arr.findIndex((ele) => ele?.id === item.id) === i;
+          })
+          .filter((ele) => ele?.count > 0),
+      };
     case DELETE:
       return {
         ...state,
@@ -14,6 +24,7 @@ const Reducer = (state = initialState, action) => {
           ...state?.cardCount.filter((ele) => ele?.id !== action.payload),
         ],
       };
+
     default:
       return state;
   }

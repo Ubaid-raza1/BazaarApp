@@ -9,13 +9,14 @@ import { SHOP } from "../../reducer/Action";
 
 const Card = ({ productData, id, itemId }) => {
   const state = useSelector((state) => state);
-  // console.log(state?.cardCount.filter((item) => ))
+  // console.log(state?.cardCount);
   const dispatch = useDispatch();
 
   const [count, setCount] = useState(0);
-  const Plus = () => {
+  const Plus = (id) => {
     setCount(count + 1);
     dispatch({ type: SHOP, payload: { count: count + 1, ...productData } });
+    // dispatch({ type: SHOP, payload: { count: count + 1, id, productData } });
   };
 
   const Minus = () => {
