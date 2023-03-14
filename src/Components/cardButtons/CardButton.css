@@ -9,6 +9,7 @@
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
     width: 58%;
     padding: 1.25rem;
+    min-width: 240px;
 }
 
 .cardBtn1 {
@@ -18,10 +19,13 @@
 
 #widthButtondSec1 {
     width: 85%;
+    min-width: 240px;
 }
 
 #widthButtondSec2 {
     width: 90%;
+    min-width: 240px;
+
 }
 
 .cardBtn1>Button {

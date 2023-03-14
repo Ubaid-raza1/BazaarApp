@@ -125,7 +125,6 @@
     left: 52%;
     top: 190px;
     width: 16%;
-
 }
 
 .Profiles {
@@ -275,7 +274,7 @@
 }
 
 .modalLeftSide2 {
-    width: 58vw;
+    width: 58vw !important;
 }
 
 .modalPara {

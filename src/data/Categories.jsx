@@ -23,8 +23,6 @@ export const firstCategories = [
   { img: firstCategory4, text: "Mobile" },
   { img: firstCategory5, text: "Laptop" },
   { img: firstCategory6, text: "Desktop" },
-];
-export const secondCategories = [
   { img: secondCategory1, text: "Tablet" },
   { img: secondCategory2, text: "Fashion" },
   { img: secondCategory3, text: "Electronics" },
@@ -32,3 +30,4 @@ export const secondCategories = [
   { img: secondCategory5, text: "Camera" },
   { img: secondCategory6, text: "Electronics" },
 ];
+

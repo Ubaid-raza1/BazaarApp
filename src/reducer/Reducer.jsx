@@ -1,4 +1,5 @@
 import { SHOP, DELETE } from "./Action";
+import { localDataCard } from "../data/LocalDatCard";
 let initialState = {
   cardCount: [],
 };
@@ -6,16 +7,20 @@ let initialState = {
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOP:
-      console.log(state.cardCount);
-      // console.log(action?.payload?.productData)
-      // console.log("count===>",action?.payload?.count + 1)
+      const tempCards = [...state?.cardCount];
+      // console.log("=====>", tempCards);
+      const currentCardIndex = tempCards?.findIndex(
+        (item) => item?.id === action?.payload?.id
+      );
+      if (currentCardIndex !== -1)
+        tempCards[currentCardIndex] = action?.payload;
+      else tempCards.push(action?.payload);
+      const updateArr = tempCards?.filter((ele) =>
+        ele?.count === 0 ? ele?.id !== action?.payload?.id : ele
+      );
       return {
         ...state,
-        cardCount: [action?.payload, ...state?.cardCount]
-          .filter((item, i, arr) => {
-            return arr.findIndex((ele) => ele?.id === item.id) === i;
-          })
-          .filter((ele) => ele?.count > 0),
+        cardCount: updateArr,
       };
     case DELETE:
       return {
@@ -24,7 +29,6 @@ const Reducer = (state = initialState, action) => {
           ...state?.cardCount.filter((ele) => ele?.id !== action.payload),
         ],
       };
-
     default:
       return state;
   }

@@ -1,12 +1,11 @@
 import React from "react";
-import { topRating } from "../../data/TopRatingOrFeatureBrands";
 import "./card.css";
 import StarIcons from "../starIcons/StarIcons";
 
-const TopRatingCard = () => {
+const TopRatingCard = ({item}) => {
   return (
     <>
-      {topRating?.map((item) => {
+      {item?.map((item) => {
         return (
           <div className="RatingCard">
             <img src={item?.img} alt="ratingCard" />

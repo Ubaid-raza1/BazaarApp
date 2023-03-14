@@ -1,5 +1,5 @@
 import React from "react";
-import { firstCategories, secondCategories } from "../data/Categories";
+import { firstCategories } from "../data/Categories";
 import { BsFillGridFill } from "react-icons/bs";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 
@@ -13,18 +13,6 @@ const Categories = () => {
             <div className="CategoryUnder">
               <span>
                 <img src={item.img} alt="firstCategory" />
-              </span>
-              <span>{item.text}</span>
-            </div>
-          );
-        })}
-      </div>
-      <div className="secondCategory">
-        {secondCategories?.map((item) => {
-          return (
-            <div className="CategoryUnder">
-              <span>
-                <img src={item.img} alt="secondCategory" />
               </span>
               <span>{item.text}</span>
             </div>

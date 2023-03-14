@@ -1,11 +1,14 @@
 /* first navbar */
 
 .firstNavMain {
+    background-color: #2B3445;
+}
+
+.firstNav {
     display: flex;
     justify-content: space-between;
-    background-color: #2B3445;
     color: #fff;
-    padding: 8px 24px;
+    padding: 8.5px 59px;
 
 }
 
@@ -17,7 +20,7 @@
 
 .firstNavLogo {
     background-color: #D23F57;
-    padding: 2px 10px;
+    padding: 1px 11px;
     border-radius: 15px;
     font-weight: 700;
 }
@@ -28,7 +31,7 @@
 
 .firstNavRight {
     display: flex;
-    gap: 19px;
+    gap: 22px;
     align-items: center;
 }
 
@@ -38,13 +41,20 @@
     border: none;
     background-color: #2B3445;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    gap: 2px;
+    padding-bottom: 2px;
+}
+
+#FaAgelDown {
+    font-size: 11px;
 }
 
 .firstNavIcons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 14px;
 }
 
 .firstNavPlusIcon {
@@ -56,22 +66,28 @@
 /* ***************** */
 
 /* second navbar */
+.secondNavLogo {
+    width: 8.5%;
+}
+
+.secondNavLogo>img {
+    width: 100%;
+}
+
 .secondNavBar {
+    min-height: 82px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    height: 80px;
-    /* z-index: 2;
-    position: fixed; */
+    width: 100vw;
 }
 
 .secondNavIconSec {
     display: flex;
-    align-items: center;
 }
 
 .Avatar {
     padding: 14px !important;
+    margin-right: 12px;
 }
 
 .secondNavIcon {
@@ -88,6 +104,7 @@
 }
 
 .secNavIcon {
+
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -98,7 +115,6 @@
     -webkit-tap-highlight-color: transparent;
     outline: 0px;
     border: 0px;
-    margin: 0px 20px 0px 0px;
     cursor: pointer;
     user-select: none;
     vertical-align: middle;
@@ -115,26 +131,81 @@
     background-color: rgb(243, 245, 249)
 }
 
+.sidebarItemValue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    min-width: 20px;
+    line-height: 1;
+    padding: 0 6px;
+    height: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: #D23F57;
+    color: #fff;
+    top: 0;
+    right: 0;
+    -webkit-transform: scale(1) translate(50%, -50%);
+    -moz-transform: scale(1) translate(50%, -50%);
+    -ms-transform: scale(1) translate(50%, -50%);
+    transform: scale(1) translate(50%, -50%);
+    transform-origin: 100% 0%;
+}
+
 .secNavIcon:active {
     background-color: silver;
 }
 
 
 #secIcon {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .secIcon {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .secNavIcon:active {
     background-color: silver;
 }
 
+.SecondNavInputMain {
+    width: 85%;
+    display: flex;
+    margin-left: 104px;
+    justify-content: center;
+}
+
 .SecondNavInput {
     border: 1px solid #ccc;
-    width: 48%;
+    width: 72%;
+    margin: auto;
     display: flex;
     border-radius: 28px;
 }
@@ -213,20 +284,18 @@
 /* third Navbar */
 
 
-
-
-
 .thirdNavBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    height: 58px;
+    /* padding-top: 10px; */
     cursor: pointer;
 }
 
-.thirdNavLeftSide {
+/* .thirdNavLeftSide {
     width: 56vw;
-}
+} */
 
 
 
@@ -290,6 +359,10 @@
     margin-right: 10px;
 }
 
+.thirdNavRightSide {
+    width: 24%;
+}
+
 /* .headerIconDiv:hover>.headertxt {
     color: rgb(210, 63, 87)
 } */
@@ -304,8 +377,8 @@
 
 .headerIconTxt ul {
     display: flex;
-    width: 60vw;
-    justify-content: space-evenly
+    gap: 32px;
+    justify-content: end;
 }
 
 .headerIconTxt ul>li {
@@ -315,6 +388,12 @@
     gap: 5px;
 }
 
+#headertxt {
+    display: flex;
+    height: 18px;
+    align-items: flex-end;
+}
+
 
 
 /* NavbarMain css*/
@@ -322,6 +401,12 @@
     display: none;
 }
 
+
+
+.shoopingIcon {
+    position: relative;
+    padding-top: 4px;
+}
 
 /* NavbarMain  css*/
 
@@ -341,15 +426,65 @@
     .NavbarMain {
         display: block;
         display: flex;
-        justify-content: space-between;
+        height: 84px;
         align-items: center;
-        padding: 20px 24px;
+    }
+
+    .navFirstFaBarsIcon {
+        width: 62%;
+    }
+
+    .navFirstImg {
+        width: 4.9rem;
+    }
+
+    .navFirstImg>img {
+        width: 100%;
     }
 
     .navFirstIcons {
         display: flex;
-        gap: 15px;
+        justify-content: end;
+        align-items: center;
+        width: 62%;
+        gap: 17px;
+    }
+
+    #NavfaBar {
+        font-size: 19px;
+        margin-left: 9px;
+        opacity: 0.5;
+    }
+
+    .navbars {
+        border-bottom: none !important;
+    }
+
+    #faSearch,
+    #faUser,
+    #faShop {
+        opacity: 0.5;
+    }
+
+    #faSearch {
+        font-size: 21px;
+    }
+
+    #faUser {
+        font-size: 18px;
+    }
+
+    #faShop {
+        font-size: 21px;
+        margin-right: 7px;
+    }
+
+    .sidebarItemValue {
+        position: absolute;
+        top: 5px;
+        right: 8px;
     }
 }
+
 
 /* responsive navbar */

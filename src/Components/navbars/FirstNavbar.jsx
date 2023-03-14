@@ -11,21 +11,23 @@ const className = {
 const FirstNavbar = () => {
   return (
     <div className="firstNavMain">
-      <div className="firstNavLeft">
-        <div className="firstNavLogo">HOT</div>
-        <div className="firstNavTxt">Free Express Shipping</div>
-      </div>
-      <div className="firstNavRight">
-        <div className="firstNavBtnSec">
-          <Button value="EN" icon={<FaAngleDown />} className="firstNavBtn" />
+      <div className="firstNav">
+        <div className="firstNavLeft">
+          <div className="firstNavLogo">HOT</div>
+          <div className="firstNavTxt">Free Express Shipping</div>
         </div>
-        <div className="firstNavIcons">
-          <FaTwitter />
-          <FaFacebookF />
-          <FaInstagram />
-        </div>
-        <div className="firstNavPlusIcon">
-          <FaPlus />
+        <div className="firstNavRight">
+          <div className="firstNavBtnSec">
+            <Button value="EN" icon={<FaAngleDown id="FaAgelDown"/>} className="firstNavBtn" />
+          </div>
+          <div className="firstNavIcons">
+            <FaTwitter />
+            <FaFacebookF />
+            <FaInstagram />
+          </div>
+          <div className="firstNavPlusIcon">
+            <FaPlus />
+          </div>
         </div>
       </div>
     </div>

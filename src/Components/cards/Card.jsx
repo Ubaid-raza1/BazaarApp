@@ -9,19 +9,20 @@ import { SHOP } from "../../reducer/Action";
 
 const Card = ({ productData, id, itemId }) => {
   const state = useSelector((state) => state);
-  // console.log(state?.cardCount);
   const dispatch = useDispatch();
-
   const [count, setCount] = useState(0);
-  const Plus = (id) => {
+  const Plus = () => {
     setCount(count + 1);
     dispatch({ type: SHOP, payload: { count: count + 1, ...productData } });
-    // dispatch({ type: SHOP, payload: { count: count + 1, id, productData } });
+    // console.log("======>", state?.cardCount);
   };
 
   const Minus = () => {
     if (count > 0) setCount(count - 1);
-    dispatch({ type: SHOP, payload: { count: count - 1, ...productData } });
+    dispatch({
+      type: SHOP,
+      payload: { count: count - 1, ...productData },
+    });
   };
 
   useEffect(() => {
@@ -62,7 +63,7 @@ const Card = ({ productData, id, itemId }) => {
               <span>{count}</span>
             </>
           )}
-          <Button icon={<FaPlus />} onClick={() => Plus(productData?.id)} />
+          <Button icon={<FaPlus />} onClick={() => Plus(productData)} />
         </div>
       </div>
     </div>

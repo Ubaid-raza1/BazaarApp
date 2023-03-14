@@ -1,0 +1,22 @@
+.navbars {
+    border-bottom: 1px solid #F3F5F9;
+    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+}
+
+.second {
+    font-family: Open sans;
+    padding-top: 60px;
+    background-color: #f6f9fc;
+}
+
+
+
+.footer {
+    color: #fff;
+    background-color: #222935;
+}
+
+ul>li {
+    text-decoration: none;
+}

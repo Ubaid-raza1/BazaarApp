@@ -15,7 +15,7 @@ const Cars = () => {
         <IconTxtHeader text="Car" />
         <div className="carCard">
           {Car.map((item) => {
-            return <Card productData={item} id={id} itemId={item?.id}/>;
+            return <Card productData={item} id={id} itemId={item?.id} />;
           })}
         </div>
       </div>

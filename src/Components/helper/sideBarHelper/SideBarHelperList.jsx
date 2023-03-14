@@ -11,11 +11,11 @@ const SideBarHelperList = ({ arr, Plus, Minus, Delete }) => {
           <div className="sidebarShopData" key={Ele?.id}>
             <span id="sidebarShopIcon">
               <span id="sidebarShopPlusIcon">
-                <FaPlus onClick={() => Plus(Ele?.id, Ele)} />
+                <FaPlus onClick={() => Plus(Ele)} />
               </span>
               <span>{Ele?.count}</span>
               <span id={Ele?.count > 1 ? "sidebarShopPlusIcon" : "minus"}>
-                <FaMinus onClick={() => Minus(Ele?.id, Ele)} />
+                <FaMinus onClick={() => Minus(Ele)} />
               </span>
             </span>
             <span id="sidebarShopImg">

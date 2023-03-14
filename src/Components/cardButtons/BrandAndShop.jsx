@@ -5,7 +5,6 @@ const BrandAndShop = ({ brand, shop, id }) => {
   const [toggle, setToggle] = useState(true);
   const Brand = () => setToggle(true);
   const Shop = () => setToggle(false);
-  console.log(id.widthButton);
   return (
 <div className="cardButton" id={id.widthButton}>
       <div className="cardHeaderTxt">

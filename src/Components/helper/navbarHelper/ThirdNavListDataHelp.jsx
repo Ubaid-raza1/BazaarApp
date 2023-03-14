@@ -10,8 +10,8 @@ const ThirdNavListDataHelp = ({ item, setVisible, check }) => {
               onMouseOver={() => check(item?.id)}
               onMouseOverCapture={() => setVisible(item?.id)}
             >
-              <span id="headertxt">{item?.name}</span>
-              <span>{item?.icon}</span>
+              <span >{item?.name}</span>
+              <span id="headertxt">{item?.icon}</span>
             </li>
           );
         })}

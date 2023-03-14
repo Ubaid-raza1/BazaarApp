@@ -4,13 +4,14 @@
     position: fixed;
     z-index: 1;
     top: 0;
+    left: 0;
     height: 100%;
     width: 90%;
+
 }
 
 .sidebar {
     height: 100%;
-    width: 25.555%;
     position: fixed;
     overflow: hidden;
     right: 0;
@@ -19,30 +20,94 @@
     z-index: 3;
     transition: 0.2s ease-out;
     transform-origin: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.sidebarMain div {
-    padding: 8px;
-    font-size: 24px;
+.fullScreenSideBarMain {
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+    transition: 0.2s ease-out;
+    transform-origin: left;
+    width: 100%;
+}
 
+.fullScreenSideBarData {
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    padding: 64px 40px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.fullScreenSideBarName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: 50%;
+    margin: auto;
+    padding: 12px 0;
+}
+
+.fullScreenSideBarChild {
+    width: 50%;
+    margin: auto;
+
+
+}
+
+.fullScreenSideBarCloseIcon {
+    display: flex;
+    justify-content: end;
+    width: 75%;
+}
+
+.emptyItem {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.emptyItemTxt {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(125, 135, 156);
+}
+
+#headerItemCount {
+    font-weight: 600;
+    color: rgb(15, 52, 96);
 }
 
 .sliderButton {
     display: flex;
-    justify-content: space-around;
-    padding: 20px 20px;
+    justify-content: space-between;
+    padding: 20px 20px 25px 20px;
     align-items: center;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid rgb(243, 245, 249);
 }
 
 .sliderButton>span {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 8px;
 }
 
 #sidebarShopIcon {
     font-size: 30px;
+    text-align: center;
 }
 
 #sidebarCloseIcon {
@@ -53,18 +118,48 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    padding: 18px 0;
+    border-bottom: 1px solid rgb(243, 245, 249);
 }
 
-#sidebarShopIcon {
+.sidebarButtons {
+    position: sticky;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
+    justify-content: end;
+    z-index: 1;
+    background-color: #FFF;
+}
+
+.sidebarDataAndBtn {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.sidebarButtons>button {
+    padding: 6px 16px;
+    margin: 8px 16px;
+    width: 91%;
+}
+
+.sidebarButtonOne {
+    border: 1px solid rgb(210, 63, 87);
+    color: rgb(255, 255, 255);
+    background-color: rgb(210, 63, 87);
+    border: none;
+}
+
+.sidebarButtonTwo {
+    border: 1px solid rgb(210, 63, 87);
+    background-color: #FFF;
 }
 
 #sidebarShopImg {
-    width: 25%;
+    width: 22%;
 }
 
 #sidebarShopImg>img {
@@ -79,10 +174,11 @@
 }
 
 #sidebarShopPlusIcon {
-    border: 1px solid rgb(210, 63, 87);
+    border: 1px solid rgba(210, 63, 87, 0.5);
     padding: 8px 8px;
     border-radius: 56px;
     display: flex;
+
     color: rgb(210, 63, 87);
 }
 
@@ -93,10 +189,22 @@
 #sideShopTxtTitle {
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 114px;
+    width: 130px;
     white-space: nowrap;
+    font-weight: 700;
+    text-transform: capitalize;
 }
 
+#sideShopTxt {
+    font-size: 10px;
+    color: rgb(125, 135, 156)
+}
+
+#sideShopTxtAmmount {
+    color: rgb(210, 63, 87);
+    font-weight: 700;
+    font-size: 14px;
+}
 
 #minus {
     border: 1px solid #ccc !important;

@@ -6,4 +6,6 @@ export const topCategoryData = [
   { img: category1, text: "Headphone" },
   { img: category2, text: "Watch" },
   { img: category3, text: "Sunglass" },
+  { img: category1, text: "Headphone" },
+  { img: category2, text: "Watch" },
 ];

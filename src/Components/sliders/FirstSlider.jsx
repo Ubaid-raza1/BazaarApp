@@ -5,17 +5,17 @@ import "./sliders.css";
 import SliderHelper from "./SliderHelper";
 
 const firstSlider = () => {
-  const head = `50% off For Your
+  const head = `50% Off For Your
   First Shopping`;
   const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis
   consequat eu, quam etiam at quis ut convalliss.`;
   return (
-    <div >
+    <div className="courselMain">
       <SlidersCoursel>
-        <SlidersItems>
+        <SlidersItems style={{ width: "100%" }}>
           <SliderHelper head={head} txt={text} />
         </SlidersItems>
-        <SlidersItems>
+        <SlidersItems style={{ width: "100%" }}>
           <SliderHelper head={head} txt={text} />
         </SlidersItems>
       </SlidersCoursel>

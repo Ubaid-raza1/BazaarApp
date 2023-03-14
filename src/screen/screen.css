@@ -1,11 +1,13 @@
 .carMain {
     display: flex;
+    gap: 25px;
 }
 
 .carCard {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 26px;
     align-items: center;
 }
 
@@ -60,24 +62,20 @@
 
 .firstCategory {
     display: flex;
-    justify-content: center;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
 }
 
-.secondCategory {
-    display: flex;
-    justify-content: center;
-}
 
 .CategoryUnder {
     background-color: #fff;
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
     display: flex;
     align-items: center;
-    width: 15%;
+    width: 14.8888888%;
     cursor: pointer;
     border-radius: 10px;
-    margin: 0 10px;
 }
 
 .CategoryUnder:hover {
@@ -88,31 +86,45 @@
 
 
 /* forMoreMain page css */
-.forMoreMain {}
+
 
 .forMoreCards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 /* forMoreMain page css */
 
 /* footerMain page css */
 .footerMain {
-    padding: 16px 24px;
-    margin: 0 34.5px;
+    padding: 16px 0;
 }
 
 .footerDiv {
     display: flex;
-    flex-wrap: wrap;
     padding: 80px 0;
+    font-family: Open sans;
+}
+
+.footerDiv>div {
+    display: flex;
+    width: 50%;
+
 }
 
 .footerIcon {
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
+}
 
+.footerIcon>.footerIconPlayStore:nth-child(2)>#footerPlayStoreImgTxt {
+    padding-bottom: 9px;
+}
+
+.footerIconPlayStore {
+    width: 150px;
 }
 
 #footerPlayStoreImgTxt {
@@ -120,10 +132,8 @@
     align-items: flex-start;
     gap: 12px;
     background-color: #161d2b;
-    padding: 8px 16px;
-    margin: 8px 0;
-    border-radius: 10px;
-
+    padding: 5px 12px;
+    border-radius: 5px;
 }
 
 #footerPlayStoreImg {
@@ -140,6 +150,10 @@
     font-weight: 700;
 }
 
+.footerAbout {
+    width: 33%;
+}
+
 .footerPara,
 #FooterAboutTxts,
 #FooterCustomerCareTxts,
@@ -151,6 +165,10 @@
 
 .footerPara {
     padding: 20px 0;
+    font-size: 13.666px;
+    white-space: initial;
+    width: 100%;
+    line-height: 23px;
 }
 
 #FooterAboutTitle,
@@ -168,6 +186,12 @@
 
 #FooterCustomerCarePara:hover {
     color: #fff;
+}
+
+#footerContactUsPara {
+    font-size: 13.555px;
+    white-space: initial;
+    width: 85%;
 }
 
 #footerContactUsPara,
@@ -239,6 +263,10 @@
     color: #fff;
 }
 
+.footerTxtIcon {
+    width: 100%;
+}
+
 .footerTxtIcon,
 .footerAbout,
 .footerCustomerCare,
@@ -246,16 +274,219 @@
     padding: 0 35px;
 }
 
-#smallTxt{
-    font-size: 12px;
+.footerAbout {
+    width: 38%;
 }
+
+#smallTxt {
+    font-size: 9px;
+}
+
+@media only screen and (max-width: 1279px) {
+
+    /* footer css*/
+    .footerDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerDiv>div:nth-child(1) {
+        padding-bottom: 20px;
+    }
+
+    .footerDiv>div {
+        width: 100vw;
+    }
+
+    .footerTxtIcon,
+    .footerCustomerCare {
+        width: 56%;
+    }
+
+    .footerTxtIcon,
+    .footerAbout,
+    .footerCustomerCare,
+    .footerContactUs {
+        padding: 0;
+    }
+
+    .footerPara {
+        width: 78%;
+    }
+
+    /* footer css*/
+
+    /* topRatingOrFeaturesBrands */
+    .topRatingOrFeaturesBrands {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newArival {
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2 {
+        width: 23.5%;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2:nth-child(1) {
+        display: none;
+    }
+
+    .featuredBrandsMain {
+        width: 50%;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2>.bigDiscountPrizeList {
+        display: none;
+    }
+
+    /* topRatingOrFeaturesBrands */
+
+    /* cards */
+    #cardWidth3 {
+        width: calc(50% - 13px);
+    }
+
+    #cardWidth2 {
+        width: calc(33% - 15px);
+        min-width: 240px;
+    }
+
+    /* cards */
+
+
+
+    .simpleCardMain {
+        flex-direction: column;
+    }
+
+    .simpleCardMain>div {
+        width: 100%;
+    }
+
+    .simpleCardPara {
+        max-width: 80%;
+    }
+
+
+    .CategoryUnder {
+        width: calc(25% - 20px);
+    }
+}
+
+@media only screen and (max-width:658px) {
+    .footerIcon {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:959px) {
+    .topRatingCard {
+        flex-direction: column;
+        /* gap: 0!important; */
+    }
+
+    .RatingCard {
+        width: 48%;
+    }
+
+    .featuredBrandsMain {
+        width: 100%;
+    }
+
+    .newArival>div:nth-child(1)>div:nth-child(2)>.featureBrandCard2:nth-child(2) {
+        display: none;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2 {
+        width: 100%;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2:nth-child(1) {
+        display: block;
+    }
+
+    /* card */
+    .cardButton {
+        display: none !important;
+    }
+
+    /* card */
+
+    /* images */
+    .secondImg {
+        flex-direction: column;
+    }
+
+    .secondImg>.secondImgDiv:nth-child(2) {
+        width: 100% !important;
+    }
+
+    /* images */
+
+    /* card  */
+
+    #cardWidth2 {
+        width: calc(50% - 13px);
+    }
+
+    .simpleCardMain>div {
+        flex-direction: column;
+    }
+
+    .simpleCard {
+        width: calc(100% - 4px);
+    }
+
+    /* card  */
+
+    .CategoryUnder {
+        width: calc(35% - 32px);
+    }
+}
+
 /* footerMain page css */
 
 /* flashDeal css */
+
 .flashDeal {
+    position: relative;
+}
+
+.cardIndicator {
+    position: absolute;
+    top: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.topCardIndicator {
+    position: absolute;
+    top: 38%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+#NextIcon {
+    position: absolute;
+    right: -15px;
+    font-size: 40px;
+    color: #0F3460;
+}
+
+#PrevIcon {
+    position: absolute;
+    left: -15px;
+    font-size: 40px;
+    color: #0F3460;
 }
 
 /* flashDeal css */
@@ -281,7 +512,6 @@
     justify-content: center;
     padding: 12px 0px;
     background-color: #fff;
-    margin: 0 22px;
 }
 
 .topCategoriesTxt {
@@ -293,8 +523,7 @@
 }
 
 .topCategories {
-    display: flex;
-    justify-content: space-around;
+    position: relative;
 }
 
 #topCategoriesTxt1 {
@@ -320,397 +549,95 @@
 
 .topRatingCard {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px;
+    gap: 32px;
+    padding: 15px;
+}
+
+.topRatingCard>div {
+    display: flex;
+    gap: 32px;
 }
 
 .topRating {
-    /* margin: 20px; */
-    /* padding: 16px; */
     background-color: #fff;
     border-radius: 10px;
 }
 
 .featureCard {
     display: flex;
+    gap: 32px;
     background-color: #fff;
     border-radius: 10px;
-    padding-top: 13px;
+    padding: 15px;
 }
 
 .topRatingOrFeaturesBrands {
     display: flex;
+    gap: 30px;
 }
 
-.featuredBrandsMain,
-.topRatingMain {
-    padding: 0 22px;
-}
+
 
 /* Top Rating Card css*/
 
 /* newArival css */
 .newArival {
     display: flex;
+    gap: 25px;
     background-color: #fff;
-    padding: 16px;
+    padding: 15px;
     border-radius: 10px;
-    margin: 0 22px;
 }
 
 
+.newArival>div:nth-child(1)>div {
+    display: flex;
+    gap: 25px;
+}
 
-
-.bigDiscount {
-    width: 16.66%;
-
+.newArival>div {
+    display: flex;
+    gap: 25px;
 }
 
 /* newArival css */
 
 /* bigDiscountCard css */
 .bigDiscountCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 12px;
+   position: relative;
 }
 
 /* bigDiscountCard css */
 
 /* all classes max width set */
-.bigDiscountMain,
-.mainCategories,
-.flashDealMain,
-.secondImgMain,
-.forMoreMain,
-.newArivalMain,
-.simpleCardMain,
-.topCategoriesMain,
-.topRatingOrFeaturesBrands,
-.opticsWatch,
-.mobile,
-.car {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 16px;
-    padding-bottom: 80px;
-}
 
-.opticsWatch,
-.mobile,
-.car {
-    padding: 0 38px 80px 38px;
-}
 
-.mainCategories {
-    margin: 0 35.8px;
-}
+
 
 .simpleCardMain {
     display: flex;
-    /* flex-direction: ; */
     justify-content: center;
-    padding: 0 38px 80px 38px;
+    gap: 25px;
 }
 
 .secondImg {
     display: flex;
-    justify-content: space-around;
+    gap: 25px;
+}
+
+.secondImg>.secondImgDiv:nth-child(2) {
+    width: 67%;
 }
 
 
 .secondImgDiv>img {
-    width: 98.5%;
+    width: 100%;
     height: 100%;
-    padding: 24px 0 0 24px;
 }
 
 /* all classes max width set */
 
+/* footer */
 
-/* responsive */
-
-
-@media only screen and (max-width: 800px) {
-    .topCategories {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .topCategiesImgTxt {
-        margin: auto;
-    }
-}
-
-@media only screen and (max-width: 1058px) {
-    .topRatingOrFeaturesBrands {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-
-
-}
-
-@media only screen and (max-width: 600px) {
-
-    .featureCard {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .secondImg {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width: 1255px) {
-    .bigDiscount {
-        width: 31.555%;
-        margin-bottom: 20px;
-    }
-}
-
-@media only screen and (max-width: 1180px) {
-    .bigDiscount {
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width: 540px) {
-    .topRatingCard {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 990px) {
-    .bigDiscountCard {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .bigDiscount {
-        width: 31.12%;
-    }
-
-    .newArival {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #newArivalImgWidth {
-        width: 100%;
-    }
-
-    .featureBrandCard2 {
-        width: 33.22%;
-    }
-}
-
-@media only screen and (max-width: 959px) {
-    .bigDiscount {
-        width: 31%;
-    }
-}
-
-@media only screen and (max-width: 912px) {
-    .bigDiscount {
-        width: 30.9%;
-    }
-}
-
-@media only screen and (max-width: 877px) {
-    .bigDiscount {
-        width: 30.7777%;
-    }
-}
-
-@media only screen and (max-width: 860px) {
-    .bigDiscount {
-        width: 47.22%;
-    }
-
-    .featureBrandCard2 {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 774px) {
-    .bigDiscount {
-        width: 46%;
-    }
-}
-
-@media only screen and (max-width: 702px) {
-    .footerDiv {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerIcon {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerIconPlayStore {
-        width: 200px;
-    }
-}
-
-@media only screen and (max-width: 599px) {
-
-    .firstNavBtnSec,
-    .firstNavIcons {
-        display: none;
-    }
-
-    .firstNavPlusIcon {
-        display: block;
-    }
-
-    .bigDiscount {
-        width: 97%;
-    }
-
-    .simpleCardMain {
-        padding: 0 20px;
-        padding-bottom: 80px;
-
-    }
-
-    .simpleCard {
-        margin: 0;
-    }
-
-    .forMoreMain {
-        padding: 0 20px 80px 20px !important;
-    }
-
-    .mainCategories {
-        padding: 0 14px 80px 14px !important;
-        margin: 0;
-    }
-
-    .opticsWatch {
-        padding: 0 10px 80px 10px;
-
-    }
-
-    .secondImgDiv>img {
-        width: 100%;
-        padding: 12px 9px;
-    }
-
-    .mobile {
-        padding: 0 14px 80px 14px;
-    }
-
-    .carMain {
-        display: block;
-    }
-
-    .firstCategory,
-    .secondCategory {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .CategoryUnder {
-        width: 96.9% !important;
-    }
-
-    .featureBrandCard2 {
-        width: 100%;
-    }
-
-    .car {
-        padding: 0 12px;
-        padding-bottom: 80px;
-    }
-
-    .footerMain {
-        padding: 16px 0 !important;
-        margin: 0;
-    }
-}
-
-@media only screen and (max-width: 1279px) {
-    .simpleCardMain {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 0;
-    }
-
-    .simpleCard {
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width: 1075px) {
-    .simpleCard {
-        width: 47.8888%;
-    }
-}
-
-@media only screen and (max-width: 1022px) {
-    .simpleCard {
-        width: 47.7777%;
-    }
-}
-
-@media only screen and (max-width: 975px) {
-    .simpleCard {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 1110px) {
-
-    .firstCategory,
-    .secondCategory {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .firstCategory {
-        padding-bottom: 0
-    }
-
-    .CategoryUnder {
-        width: 31%;
-        margin: 10px;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .CategoryUnder {
-        width: 47%;
-    }
-}
-
-@media only screen and (max-width: 769px) {
-    .CategoryUnder {
-        width: 46%;
-    }
-}
-
-@media only screen and (max-width: 603px) {
-    .CategoryUnder {
-        width: 45.9%;
-    }
-
-}
-
-
-
-
-
-
-
-
+/* footer */
 /* responsive */

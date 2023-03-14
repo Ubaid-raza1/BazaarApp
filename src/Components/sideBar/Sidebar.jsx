@@ -4,22 +4,32 @@ import { DELETE, SHOP } from "../../reducer/Action";
 import shoppingBag from "../../images/shopping-bag.svg";
 import SideBarHelperList from "../helper/sideBarHelper/SideBarHelperList";
 import "./Sidebar.css";
+import Button from "../button/Button";
 
 const Sidebar = ({ setIndex, index }) => {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
- 
+  const AllCounts = state?.cardCount?.reduce(
+    (previousValue, currentValue) =>
+      previousValue + (currentValue?.count || 0) * currentValue?.prizeCurrent,
+    0
+  );
 
-  const Plus = (id, item) => {
-    dispatch({ type: SHOP, payload: { count: item.count++, ...item } });
+  const Plus = (item) => {
+    dispatch({
+      type: SHOP,
+      payload: { count: item.count++, ...item },
+    });
   };
 
-  const Minus = (id, item) => {
+  const Minus = (item) => {
     if (item?.count > 1) {
-      dispatch({ type: SHOP, payload: { count: item.count--, ...item } });
+      dispatch({
+        type: SHOP,
+        payload: { count: item.count--, ...item },
+      });
     }
   };
-  // console.log("======>", arr);
 
   const Delete = (id) => {
     dispatch({ type: DELETE, payload: id });
@@ -32,23 +42,45 @@ const Sidebar = ({ setIndex, index }) => {
         style={{ display: index === 1 ? "block" : "none" }}
         onClick={() => setIndex(0)}
       ></div>
-      <div className="sidebar" style={{ transform: `scaleX(${index})` }}>
+      <div
+        className="sidebar"
+        style={{
+          transform: `scaleX(${index})`,
+          width: !!state?.cardCount?.length ? "26%" : "15%",
+          overflowY: !!state?.cardCount?.length && "scroll",
+        }}
+      >
         <div className="sliderButton">
           <span>
-            <AiOutlineShopping id="sidebarShopIcon" />0 item
+            <AiOutlineShopping id="sidebarShopIcon" />
+            <span id="headerItemCount">{state?.cardCount?.length} item</span>
           </span>
           <AiOutlineClose id="sidebarCloseIcon" onClick={() => setIndex(0)} />
         </div>
         {!!state?.cardCount?.length ? (
-          <SideBarHelperList
-            arr={state?.cardCount}
-            Plus={Plus}
-            Minus={Minus}
-            Delete={Delete}
-          />
+          <div className="sidebarDataAndBtn">
+            <div className="sideBarData">
+              <SideBarHelperList
+                arr={state?.cardCount}
+                Plus={Plus}
+                Minus={Minus}
+                Delete={Delete}
+              />
+            </div>
+            <div className="sidebarButtons">
+              <Button
+                className={"sidebarButtonOne"}
+                value={`Checkout Now ($${AllCounts.toString()})`}
+              />
+              <Button className={"sidebarButtonTwo"} value="View Cart" />
+            </div>
+          </div>
         ) : (
-          <div>
+          <div className="emptyItem">
             <img src={shoppingBag} />
+            <div className="emptyItemTxt">
+              Your shopping bag is empty. Start shopping
+            </div>
           </div>
         )}
       </div>

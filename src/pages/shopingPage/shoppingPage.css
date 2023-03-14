@@ -1,0 +1,263 @@
+.cart {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.shoppingMain {
+    background-color: #f6f9fc;
+}
+
+.ShoppingCartAndFormMain {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cratTitleICon {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cartImg {
+    width: 20%;
+}
+
+.cartImg>img {
+    width: 100%;
+    height: 100%;
+}
+
+.ShoppingCart {
+    width: 65%;
+    padding: 30px 0 24px 0;
+}
+
+.cartData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cartData>p {
+    display: flex;
+    gap: 5px;
+}
+
+.cartData p>span {
+    color: #D23F57;
+    font-weight: 600;
+}
+
+.cartPlusMinus {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.cartPlusMinus>Button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(210, 63, 87, 0.5);
+    color: #D23F57;
+    min-width: 0;
+    min-height: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 7px 7px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cartPlusMinus>Button:active {
+    background-color: rgba(210, 63, 87, 0.4)
+}
+
+.Shopping {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 27%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+
+.shoppingTotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+hr {
+    border: 1px solid #F3F5F9;
+}
+
+.shoppingTotal>:nth-child(1) {
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.shoppingTotal>:nth-child(2) {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputDiv>select {
+    padding: 8px 16px;
+}
+
+.inputDiv select>option {
+    padding: 8px;
+}
+
+
+.shoppingBtn {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #D23F57;
+    color: #D23F57;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.shoppingBtn:hover {
+    background-color: #FEF7F8;
+}
+
+.shoppingBtnTwo {
+    background-color: #D23F57;
+    color: #fff;
+    border: 1px solid #D23F57;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inputDiv>input {
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.inputDiv>span {
+    font-size: 14px;
+    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    line-height: 1.4375em;
+    color: #ccc;
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4px 0 5px;
+    padding-top: 1px;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+
+.inputDiv span>textarea {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    padding: 0;
+    box-sizing: content-box;
+    background: none;
+    height: auto;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    padding-top: 0;
+    resize: none;
+    padding: 0;
+    border-radius: 4px;
+    border-color: #ccc;
+
+}
+
+.inputDiv span>textarea:hover {
+    border-color: #000;
+}
+
+.inputDiv>input:hover {
+    border-color: #000;
+}
+
+.shoppingButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingButton>Button {
+    padding: 8px 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.shoppingBtnTwo:hover {
+    background-color: #e3364e;
+
+}
+
+.shoppingTitle {
+    display: flex;
+    gap: 5px;
+    padding: 20px 0;
+}
+
+.shoppingTitle>:nth-child(1) {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.shoppingTitle>:nth-child(2) {
+    padding: 1px 5px;
+    font-size: 12px;
+    background-color: #FCE9EC;
+    color: #D23F57;
+    border: none;
+
+}
+
+.shoppingTitleTwo {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 20px 0;
+}

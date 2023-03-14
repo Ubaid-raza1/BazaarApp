@@ -12,7 +12,7 @@ import camera4 from "../images/camera4.webp";
 
 export const moreItem = [
   {
-    id: 20,
+    id: 29,
     cardImg: bike1,
     title: "tarz t3",
     prizeCurrent: "164.70",
@@ -21,7 +21,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 21,
+    id: 30,
     cardImg: bike2,
     title: "xamaha r15 black",
     prizeCurrent: "162.30",
@@ -30,7 +30,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 22,
+    id: 31,
     cardImg: bike3,
     title: "xamaha r15 blue",
     prizeCurrent: "249.30",
@@ -39,7 +39,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 23,
+    id: 32,
     cardImg: cycle,
     title: "xevel 2020",
     prizeCurrent: "256.50",
@@ -48,7 +48,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 24,
+    id: 33,
     cardImg: bike4,
     title: "jakson tb1",
     prizeCurrent: "112.10",
@@ -57,7 +57,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 25,
+    id: 34,
     cardImg: siri,
     title: "siri 2020",
     prizeCurrent: "122.20",
@@ -66,7 +66,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 26,
+    id: 35,
     cardImg: cosor,
     title: "COSOR1",
     prizeCurrent: "273.60",
@@ -75,7 +75,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 27,
+    id: 36,
     cardImg: ranosonicCharger,
     title: "ranasonic charger",
     prizeCurrent: "107.10",
@@ -84,7 +84,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 28,
+    id: 37,
     cardImg: ranosonicCharger,
     title: "lumix DSIR",
     prizeCurrent: "115.32",
@@ -93,7 +93,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 29,
+    id: 38,
     cardImg: camera2,
     title: "atech cam 1080p",
     prizeCurrent: "264.60",
@@ -102,7 +102,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 30,
+    id: 39,
     cardImg: camera3,
     title: "tony a9",
     prizeCurrent: "233.70",
@@ -111,7 +111,7 @@ export const moreItem = [
     like: false,
   },
   {
-    id: 31,
+    id: 40,
     cardImg: camera4,
     title: "beat sw3",
     prizeCurrent: "112.53",

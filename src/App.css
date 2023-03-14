@@ -3,35 +3,235 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
 
-.main {
-    max-width: 1400px;
-    margin: auto;
+/* font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
+.flashDealMain,
+.topCategoriesMain,
+.topRatingOrFeaturesBrands,
+.newArivalMain,
+.bigDiscountMain,
+.car,
+.mobile,
+.secondImgMain,
+.opticsWatch,
+.mainCategories,
+.forMoreMain,
+.simpleCardMain {
+    padding-bottom: 80px;
 }
 
-.navbars {
-    border-bottom: 1px solid #F3F5F9;
+@media (min-width: 1280px) {
+
+    .firstNav,
+    .secondNavBar,
+    .thirdNavBar,
+    .courselMain,
+    .bigDiscountMain,
+    .mainCategories,
+    .flashDealMain,
+    .secondImgMain,
+    .forMoreMain,
+    .newArivalMain,
+    .simpleCardMain,
+    .topCategoriesMain,
+    .topRatingOrFeaturesBrands,
+    .opticsWatch,
+    .mobile,
+    .car,
+    .footerMain {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2:nth-child(1) {
+        display: none;
+    }
+
 }
 
-.second {
-    background-color: #f6f9fc;
-    /* padding: 24px 24px; */
+@media (min-width: 600px) {
+
+    .firstNav,
+    .NavbarMain,
+    .courselMain,
+    .secondNavBar,
+    .thirdNavBar,
+    .bigDiscountMain,
+    .mainCategories,
+    .flashDealMain,
+    .secondImgMain,
+    .forMoreMain,
+    .newArivalMain,
+    .simpleCardMain,
+    .topCategoriesMain,
+    .topRatingOrFeaturesBrands,
+    .opticsWatch,
+    .mobile,
+    .car,
+    .footerMain {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    /* .cardCoursel {
+        margin-left: 24px;
+        margin-right: 24px;
+    } */
 }
 
-.secondImg {
-    /* display: flex;
-    justify-content: space-evenly; */
+@media (max-width: 599px) {
+
+    .firstNav,
+    .NavbarMain,
+    .courselMain,
+    .secondNavBar,
+    .thirdNavBar,
+    .bigDiscountMain,
+    .mainCategories,
+    .flashDealMain,
+    .secondImgMain,
+    .forMoreMain,
+    .newArivalMain,
+    .simpleCardMain,
+    .topCategoriesMain,
+    .topRatingOrFeaturesBrands,
+    .opticsWatch,
+    .mobile,
+    .car,
+    .footerMain {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .fristSlider {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sliderTxt>h1 {
+        font-size: 32px;
+    }
+
+    .carousel-item {
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+
+    .newArival>div:nth-child(1)>div:nth-child(2)>.featureBrandCard2:nth-child(2) {
+        display: block;
+    }
+
+    .newArival>div:nth-child(2)>.featureBrandCard2:nth-child(1) {
+        display: none;
+    }
+
+    .newArival>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        gap: 0 !important;
+    }
+
+    .featureBrandCard2>.bigDiscountPrizeList {
+        display: none;
+    }
+
+    .newArival>div:nth-child(1)>div:nth-child(1) {
+        padding-bottom: 24px;
+    }
+
+    .newArival>div:nth-child(2) {
+        padding-top: 24px;
+    }
+
+    /* card */
+    .carCard {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #cardWidth3 {
+        width: 100% !important;
+    }
+
+    .carMain {
+        display: block;
+    }
+
+    .forMoreCards {
+        flex-direction: column;
+    }
+
+    #cardWidth2 {
+        width: 100% !important;
+    }
+
+    /* card */
+
+
+    .firstCategory {
+        flex-direction: column;
+    }
+
+    .CategoryUnder {
+        width: 100% !important;
+    }
 }
 
-.footer {
-    color: #fff;
-    background-color: #222935;
+@media only screen and (max-width:949px) {
+    .flashDeal>.card:nth-child(4) {
+        display: none;
+    }
+
+    .topCategories>.topCategiesImgTxt:nth-child(3) {
+        display: none;
+    }
 }
 
-ul>li {
-    text-decoration: none;
-}
+/* @media only screen and (max-width: 2560px) {
+
+    .carousel,
+    .firstNav,
+    .secondNavBar {
+        max-width: 1300px;
+        margin: auto;
+    } */
+
+/* .headerIconTxt ul {
+        display: flex;
+        width: 37vw;
+        justify-content: space-evenly;
+    }
+
+
+    .secondNavIconSec {
+        display: flex;
+        width: 7vw;
+        justify-content: end;
+    }
+
+    .thirdNavLeftSide {
+        width: 61vw;
+    }
+
+    .thirdNavRightSide {
+        width: 13%;
+    }
+
+    .firstNav {
+        padding: 8.5px 42px;
+    }
+    .thirdNavBar {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        cursor: pointer;
+    }
+    .modalLeftSide2 {
+        width: 30vw;
+    } */
+/* } */

@@ -1,3 +1,7 @@
 #iconBtnNav {
     font-size: 18px;
 }
+
+.thirdFaAngelLeftNavbarIcon {
+    transition: all 250ms ease-in-out 0s;
+}

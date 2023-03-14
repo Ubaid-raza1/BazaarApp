@@ -1,4 +1,4 @@
-import shoes from "../images/shoes.png";
+import shoes from "../images/shoe-3.webp";
 import simpleWatch from "../images/simple_watch.webp";
 import mobile from "../images/mobile.webp";
 import smartWatch from "../images/smart_watch.webp";

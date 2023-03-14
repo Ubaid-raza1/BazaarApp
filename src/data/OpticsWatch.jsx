@@ -25,7 +25,7 @@ import steelcase from "../images/steelcase.webp";
 
 export const opticsWatch = [
   {
-    id: 1,
+    id: 20,
     cardImg: glass1,
     title: "police gray eyeglasses",
     prizeCurrent: "150.30",
@@ -34,7 +34,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 2,
+    id: 21,
     cardImg: glass2,
     title: "say ban mutt black",
     prizeCurrent: "117.39",
@@ -43,7 +43,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 3,
+    id: 22,
     cardImg: glass3,
     title: "say ban black",
     prizeCurrent: "156.24",
@@ -52,7 +52,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 4,
+    id: 23,
     cardImg: glass4,
     title: "say ban ocean",
     prizeCurrent: "194.12",
@@ -61,7 +61,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 5,
+    id: 24,
     cardImg: glass5,
     title: "sun glasses collection",
     prizeCurrent: "136.71",
@@ -70,7 +70,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 6,
+    id: 25,
     cardImg: singleWatch,
     title: "ziaomi mi band2",
     prizeCurrent: "222.27",
@@ -79,7 +79,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 7,
+    id: 26,
     cardImg: simpleWatch,
     title: "kossil watch brown",
     prizeCurrent: "244.72",
@@ -88,7 +88,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 8,
+    id: 27,
     cardImg: watch1,
     title: "MVMTM watch black",
     prizeCurrent: "199.28",
@@ -97,7 +97,7 @@ export const opticsWatch = [
     like: false,
   },
   {
-    id: 9,
+    id: 28,
     cardImg: watch2,
     title: "xarioho watch black",
     prizeCurrent: "214.70",

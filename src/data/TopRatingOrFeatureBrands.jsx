@@ -10,7 +10,7 @@ import london_britches from "../images/london-britches.webp";
 import jimandjiko from "../images/jimandjiko.webp";
 // featuresBrands images
 
-export const topRating = [
+export const topRatingOne = [
   {
     img: camera,
     text: "Camera",
@@ -21,6 +21,8 @@ export const topRating = [
     text: "Shoe",
     price: "$400.00",
   },
+];
+export const topRatingTwo = [
   {
     img: smartPhone,
     text: "Phone",

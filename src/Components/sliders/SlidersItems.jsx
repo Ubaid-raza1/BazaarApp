@@ -1,12 +1,12 @@
-import React from 'react'
-import "./sliders.css"
+import React from "react";
+import "./sliders.css";
 
-const SlidersItems = ({children}) => {
+const SlidersItems = ({ children, style }) => {
   return (
-    <div className="carousel-item" style={{ width: "100%" }}>
+    <div className="carousel-item" style={style}>
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default SlidersItems
+export default SlidersItems;

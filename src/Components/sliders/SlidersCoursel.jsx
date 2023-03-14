@@ -23,6 +23,7 @@ const SlidersCoursel = ({ children, width }) => {
   });
 
   return (
+    
     <div {...halders} className="carousel">
       <div
         className="inner"

@@ -1,33 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alexandria:wght@400;900&family=Anek+Latin:wght@100;300&family=IBM+Plex+Mono:wght@200&family=Inconsolata:wght@200;300;400&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Serif:ital@0;1&family=Poppins:wght@200;300;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Roboto:ital,wght@0,300;1,100&family=Source+Sans+Pro:wght@600&display=swap');
+
 .carousel {
     overflow: hidden;
     cursor: pointer;
-    padding: 16px 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    overflow: hidden;
 }
 
-.inner {
+.inner,
+.cardInner {
     white-space: nowrap;
     transition: 0.6s;
 
 }
 
+.SecondSliderMain {
+    overflow: hidden;
+    display: flex;
+}
+
+
+
 .fristSlider {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 89%;
 }
 
 .sliderTxt {
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding: 24px 0px 0px 24px;
+    gap: 3px;
+    max-width: 500px;
 }
 
 .sliderTxt>h1 {
-    font-size: 50px;
+    font-family: Open Sans;
+    font-size: 51px;
     margin-bottom: 21px;
     color: #2B3445;
-    white-space: pre-line;
+    white-space: initial;
     font-weight: 700;
+    line-height: 60px;
+    word-spacing: -3px;
 }
 
 .firstPersonSlider {
@@ -35,19 +52,22 @@
 }
 
 .sliderTxt>p {
+    font-family: Open sans;
     margin-bottom: 21px;
-    color: #0F3460;
-    white-space: pre-line;
+    color: #0F347D;
+    white-space: initial;
     font-size: 14px;
 }
 
 .firstBtn>Button {
-    padding: 10px 50px;
+    padding: 10px 40px;
     color: #fff;
     background-color: #D23F57;
     border: 0;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .firstBtn>Button:active {
@@ -59,6 +79,7 @@
     max-height: 400px;
     display: block;
     max-width: 100%;
+    padding-right: 35px;
 }
 
 
@@ -66,14 +87,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
+    gap: 25px;
 }
 
 .indicator {
     display: flex;
     justify-content: center;
-    padding: 24px 0px;
-    margin: 24px 0px;
+    margin-top: 2rem;
 }
 
 .indicator>button {
@@ -87,12 +107,10 @@
     margin: 4px;
 }
 
-/* resposive */
-@media only screen and (max-width: 600px) {
-    .fristSlider {
-        display: flex;
-        flex-direction: column;
-    }
+
+.thirdSliderMain,
+.fourSliderMain {
+    overflow: hidden;
 }
 
 /* resposive */

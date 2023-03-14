@@ -10,6 +10,7 @@ const DropDown = () => {
   const [toggle, setToggle] = useState(false);
   const [dropDownDataCheck, setDropDownDataCheck] = useState();
   const [modalVisible, setModalVisible] = useState(false);
+
   const check = (id) => {
     const arr = dropData.find((item) => {
       return item?.id === id && (item?.subItems || item?.Items);
@@ -22,7 +23,11 @@ const DropDown = () => {
   };
   return (
     <div className="dropdown">
-      <IconButton className="thirdNavBtn" onClick={checkVisible} />
+      <IconButton
+        className="thirdNavBtn"
+        onClick={checkVisible}
+        toggle={toggle}
+      />
       <div
         className="dropdown-content"
         style={{ display: toggle ? "block" : "none" }}

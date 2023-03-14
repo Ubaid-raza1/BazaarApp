@@ -2,7 +2,6 @@ import React from "react";
 import "./card.css";
 
 const SimpleCard = ({ productData }) => {
-  // console.log(productData);
   return (
     <>
       {productData?.map((item) => {
@@ -12,9 +11,8 @@ const SimpleCard = ({ productData }) => {
             <div className="simpleCardTxts">
               <h4 className="simpleCardTitle">{item?.text}</h4>
               <div className="simpleCardPara">
-                We offer competitive prices <br /> on our 100 million plus
-                <br />
-                product any range.
+                We offer competitive prices on our 100 million plus product any
+                range.
               </div>
             </div>
           </div>
