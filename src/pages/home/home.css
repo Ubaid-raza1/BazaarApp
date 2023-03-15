@@ -1,3 +1,51 @@
+.main {
+    position: relative;
+}
+
+.FooterNavbar {
+    font-family: Open sans;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    display: none;
+    box-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.1)
+}
+
+.FooterNavbarMain {
+    width: 100%;
+}
+
+.FooterNav {
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.FooterNavbarhelper{
+    width: 50%;
+}
+.FooterNavbarhelper>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-decoration: none;
+    color: black;
+}
+
+.FooterNavbarhelper>a:active {
+    color: #d23f57;
+}
+
+#footerIcon {
+    font-size: 24px;
+}
+.footerHelperFirstChild{
+    position: relative;
+}
+
 .navbars {
     border-bottom: 1px solid #F3F5F9;
     font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

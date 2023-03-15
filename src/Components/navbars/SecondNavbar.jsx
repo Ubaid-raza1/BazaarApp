@@ -7,6 +7,7 @@ import BazarLogo from "../../images/logo2.svg";
 import Button from "../button/Button";
 import Sidebar from "../sideBar/Sidebar";
 import { useSelector } from "react-redux";
+import FooterNavbar from "./FooterNavbar";
 //
 
 const SecondNavbar = () => {
@@ -52,6 +53,7 @@ const SecondNavbar = () => {
       </div>
 
       <Sidebar setIndex={setIndex} index={index} />
+      
     </>
   );
 };

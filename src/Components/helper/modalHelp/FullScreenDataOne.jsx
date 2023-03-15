@@ -6,7 +6,7 @@ const FullScreenDataOne = ({ data }) => {
   return (
     <div className="FullScreenDataOne">
       <div className="FullScreenDataFirst">
-        {/* {data?.headerOne === "Men's Fashion" ? (
+        {data?.headerOne === "Men's Fashion" ? (
           <>
             <FullScreenModalListTwo
               head={data?.headerOne}
@@ -92,7 +92,7 @@ const FullScreenDataOne = ({ data }) => {
               item={data?.babyToddlerToys}
             />
           </>
-        )} */}
+        )}
       </div>
     </div>
   );

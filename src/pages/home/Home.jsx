@@ -19,6 +19,7 @@ import FirstSlider from "../../Components/sliders/FirstSlider";
 import Footer from "../../screen/Footer";
 import "./home.css";
 import { Link } from "react-router-dom";
+import FooterNavbar from "../../Components/navbars/FooterNavbar";
 
 const Home = () => {
   return (
@@ -48,6 +49,9 @@ const Home = () => {
       </div>
       <div className="footer">
         <Footer />
+      </div>
+      <div className="FooterNavbar">
+        <FooterNavbar />
       </div>
     </div>
   );

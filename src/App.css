@@ -7,7 +7,6 @@
     line-height: 1.5;
 }
 
-/* font-family: Open Sans, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
 
 .flashDealMain,
 .topCategoriesMain,
@@ -180,6 +179,24 @@
     .CategoryUnder {
         width: 100% !important;
     }
+
+    .footerDiv>div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerPara {
+        width: 179%;
+    }
+
+    .firstNavBtnSec,
+    .firstNavIcons {
+        display: none;
+    }
+
+    .firstNavPlusIcon {
+        display: block;
+    }
 }
 
 @media only screen and (max-width:949px) {
@@ -192,46 +209,9 @@
     }
 }
 
-/* @media only screen and (max-width: 2560px) {
 
-    .carousel,
-    .firstNav,
-    .secondNavBar {
-        max-width: 1300px;
-        margin: auto;
-    } */
-
-/* .headerIconTxt ul {
-        display: flex;
-        width: 37vw;
-        justify-content: space-evenly;
+@media only screen and (max-width:900px) {
+    .FooterNavbar {
+        display: block !important;
     }
-
-
-    .secondNavIconSec {
-        display: flex;
-        width: 7vw;
-        justify-content: end;
-    }
-
-    .thirdNavLeftSide {
-        width: 61vw;
-    }
-
-    .thirdNavRightSide {
-        width: 13%;
-    }
-
-    .firstNav {
-        padding: 8.5px 42px;
-    }
-    .thirdNavBar {
-        display: flex;
-        justify-content: end;
-        align-items: center;
-        cursor: pointer;
-    }
-    .modalLeftSide2 {
-        width: 30vw;
-    } */
-/* } */
+}

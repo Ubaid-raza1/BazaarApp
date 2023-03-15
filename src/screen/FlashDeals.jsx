@@ -10,13 +10,13 @@ const id = { cardWidth: "cardWidth1" };
 const FlashDeals = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const Next = () => {
-    if (activeIndex > -74.64) setActiveIndex(activeIndex - 18.66);
+    if (activeIndex > -74) setActiveIndex(activeIndex - 18.5);
     else setActiveIndex(0);
   };
 
   const Prev = () => {
-    if (activeIndex < 0) setActiveIndex(activeIndex + 18.66);
-    else setActiveIndex(-74.64);
+    if (activeIndex < 0) setActiveIndex(activeIndex + 18.5);
+    else setActiveIndex(-74);
   };
 
   return (

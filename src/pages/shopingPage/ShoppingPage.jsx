@@ -7,12 +7,11 @@ import Footer from "../../screen/Footer";
 import "./shoppingPage.css";
 import ShoppingCard from "../../Components/cards/ShoppingCard";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import Button from "../../Components/button/Button";
 import Input from "../../Components/input/Input";
 import Textarea from "../../Components/textarea/Textarea";
 import SelectOption from "../../Components/selectOption/SelectOption";
-import SecondSlider from "../../Components/sliders/SecondSlider";
+import ShoppingCartHelper from "../../Components/helper/shoppingCartHelper/ShoppingCartHelper";
 
 const ShoppingPage = () => {
   const state = useSelector((state) => state);
@@ -26,16 +25,15 @@ const ShoppingPage = () => {
         <ThirdNavbar />
       </div>
       <div className="shoppingMain">
-        <SecondSlider />
-        {/* <div className="ShoppingHeader">
-          <div className="">1. Cart</div>
-          <div></div>
-          <div>2. Details</div>
-          <div></div>
-          <div>3. Payment</div>
-          <div></div>
-          <div>4. Review</div>
-        </div> */}
+        <div className="ShoppingHeader">
+          <ShoppingCartHelper txt="1. Cart" />
+          <div className="shoppingCartLine"></div>
+          <ShoppingCartHelper txt="2. Details" />
+          <div className="shoppingCartLine"></div>
+          <ShoppingCartHelper txt="3. Payment" />
+          <div className="shoppingCartLine"></div>
+          <ShoppingCartHelper txt="4. Review" />
+        </div>
         <div className="ShoppingCartAndFormMain">
           <div className="ShoppingCart">
             <ShoppingCard arr={state?.cardCount} />

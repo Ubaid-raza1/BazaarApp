@@ -1,5 +1,16 @@
 /* first navbar */
 
+#IconsActivated {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-left: 8px;
+}
+.firstNavIconsTwo{
+    display: flex;
+    gap: 12px;
+}
+
 .firstNavMain {
     background-color: #2B3445;
 }
@@ -12,7 +23,7 @@
 
 }
 
-.firstNavLeft {
+.firstNavLeft>span {
     display: flex;
     align-items: center;
     gap: 10px;

@@ -46,7 +46,7 @@ const Sidebar = ({ setIndex, index }) => {
         className="sidebar"
         style={{
           transform: `scaleX(${index})`,
-          width: !!state?.cardCount?.length ? "26%" : "15%",
+          width: !!state?.cardCount?.length ? "360px" : "218px",
           overflowY: !!state?.cardCount?.length && "scroll",
         }}
       >
@@ -84,6 +84,7 @@ const Sidebar = ({ setIndex, index }) => {
           </div>
         )}
       </div>
+      
     </>
   );
 };
