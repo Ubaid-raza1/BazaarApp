@@ -10,7 +10,11 @@ const FooterNavbar = () => {
   return (
     <div className="FooterNavbarMain">
       <div className="FooterNav">
-        <FooterNavbarHelper icon={<BsHouseDoor id="footerIcon" />} txt="Home" />
+        <FooterNavbarHelper
+          icon={<BsHouseDoor id="footerIcon" />}
+          txt="Home"
+          path="/"
+        />
         <FooterNavbarHelper icon={<BsGrid id="footerIcon" />} txt="Category" />
         <FooterNavbarHelper
           icon={<AiOutlineShopping id="footerIcon" />}

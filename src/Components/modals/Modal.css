@@ -41,12 +41,26 @@
     left: 100%;
     margin-left: 15px;
 }
+.DropDownModalTwo{
+    position: absolute;
+    margin-top: 11px;
+    width: 57rem;
+    left: 255px;
+    margin-left: 15px;
+}
 
 .simpleDropDownModal {
     position: absolute;
     margin-top: 11px;
     left: 100%;
     width: 100%;
+    margin-left: 15px;
+}
+.simpleDropDownModalTwo {
+    position: absolute;
+    margin-top: 11px;
+    left: 260px;
+    width: 21rem;
     margin-left: 15px;
 }
 
@@ -98,7 +112,7 @@
 
 .Sale {
     position: absolute;
-    left: 44.666666%;
+    left: 47%;
     top: 190px;
     width: 16%;
 
@@ -106,7 +120,7 @@
 
 .Vendor {
     position: absolute;
-    left: 44.666666%;
+    left: 47%;
     top: 230px;
     width: 16%;
 
@@ -114,7 +128,7 @@
 
 .Shop {
     position: absolute;
-    left: 44.666666%;
+    left: 47%;
     top: 270px;
     width: 16%;
 
@@ -122,14 +136,14 @@
 
 .Orders {
     position: absolute;
-    left: 52%;
+    left: 54.222%;
     top: 190px;
     width: 16%;
 }
 
 .Profiles {
     position: absolute;
-    left: 52%;
+    left: 54.222%;
     top: 230px;
     width: 16%;
 
@@ -137,7 +151,7 @@
 
 .Address {
     position: absolute;
-    left: 52%;
+    left: 54.222%;
     top: 270px;
     width: 16%;
 
@@ -145,7 +159,7 @@
 
 .Support {
     position: absolute;
-    left: 52%;
+    left: 54.222%;
     top: 310px;
     width: 16%;
 
@@ -153,14 +167,14 @@
 
 .Products {
     position: absolute;
-    left: 64%;
+    left: 65.55%;
     top: 230px;
     width: 16%;
 }
 
 .Order {
     position: absolute;
-    left: 64%;
+    left: 65.555%;
     top: 270px;
     width: 16%;
 }
@@ -171,7 +185,7 @@
     position: absolute;
     left: -36.2rem;
     margin-top: 16px;
-    width: 31%;
+    width: 35%;
     border-right: 1px solid #ccc;
     height: 38rem;
     overflow: auto;
@@ -183,15 +197,14 @@
 .fullScreenRight {
     position: absolute;
     margin-top: 16px;
-    left: -21.2rem;
-    width: 31%;
+    left: -19.2rem;
     height: 38rem;
     overflow: auto;
     z-index: 98;
     background-color: #FFFFFF;
-    width: 81.3vw;
+    width: 78vw;
     padding-top: 46px;
-    padding-left: 47px;
+    padding-left: 28px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -204,7 +217,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .FullScreenModalList ul>li:hover {
@@ -450,7 +463,6 @@
 .FullScreenModalListTwo ul {
     display: flex;
     flex-wrap: wrap;
-    width: 76vw;
     padding-bottom: 4rem;
 }
 

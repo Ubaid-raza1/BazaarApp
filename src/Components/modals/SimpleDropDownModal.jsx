@@ -7,6 +7,7 @@ const SimpleDropDownModal = ({
   SimpleDropDownData,
   setModalVisible,
   modalVisible,
+  sticky
 }) => {
   const [element, setElement] = useState();
   const [visible, setVisible] = useState(false);
@@ -22,7 +23,7 @@ const SimpleDropDownModal = ({
     <div onMouseLeave={checkVisible}>
       <div className="simpleDropDownModalMain">
         <ModalWrapper
-          className="simpleDropDownModal"
+          className={sticky?"simpleDropDownModalTwo": "simpleDropDownModal"}
           style={{ display: modalVisible ? "block" : "none" }}
         >
           <SimpleModalList items={SimpleDropDownData} check={check} />

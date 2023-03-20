@@ -2,12 +2,11 @@
     background-color: black;
     opacity: 0.5;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: 0;
     height: 100%;
     width: 90%;
-
 }
 
 .sidebar {
@@ -24,6 +23,11 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+#sidebarWidthTwo {
+    width: 360px!important;
+}
+
 
 .fullScreenSideBarMain {
     height: 100%;

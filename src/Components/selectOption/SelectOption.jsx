@@ -1,12 +1,13 @@
 import React from "react";
-import Button from "../button/Button";
 import "./selectOption.css";
 
-const SelectOption = () => {
+const SelectOption = ({ data }) => {
   return (
-    <fieldset>
-      <legend>country</legend>
-    </fieldset>
+    <select id="standard-select">
+      {data?.map((item) => {
+        return <option value={item}>{item}</option>;
+      })}
+    </select>
   );
 };
 

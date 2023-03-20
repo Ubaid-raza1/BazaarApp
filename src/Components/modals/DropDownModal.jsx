@@ -3,14 +3,19 @@ import "./Modal.css";
 import ModalSameCls from "../helper/modalHelp/ModalSameCls";
 import ModalWrapper from "./ModalWrapper";
 
-const DropDownModal = ({ DropDownData, setModalVisible, modalVisible }) => {
+const DropDownModal = ({
+  DropDownData,
+  setModalVisible,
+  modalVisible,
+  sticky,
+}) => {
   return (
     <div
       className="DropDownModalMain"
       onMouseLeave={() => setModalVisible(false)}
     >
       <ModalWrapper
-        className="DropDownModal"
+        className={sticky ? "DropDownModalTwo" : "DropDownModal"}
         style={{ display: modalVisible ? "block" : "none" }}
       >
         {DropDownData?.subItems?.map((i) => {

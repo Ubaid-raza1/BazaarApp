@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import IconButton from "../button/IconButton";
 import "./DropDown.css";
 import { DropDown as dropData } from "../../data/DropDownData";
 import DropDownModal from "../modals/DropDownModal";
 import DropDownHelper from "../helper/dropDownHelper/DropDownHelper";
 import SimpleDropDownModal from "../modals/SimpleDropDownModal";
 
-const DropDown = () => {
+const DropDown = ({ DropButton, txt, sticky }) => {
   const [toggle, setToggle] = useState(false);
   const [dropDownDataCheck, setDropDownDataCheck] = useState();
   const [modalVisible, setModalVisible] = useState(false);
@@ -23,13 +22,15 @@ const DropDown = () => {
   };
   return (
     <div className="dropdown">
-      <IconButton
-        className="thirdNavBtn"
+      <DropButton
+        className={sticky ? "thirdNavBtnTwo" : "thirdNavBtn"}
+        txt={txt}
         onClick={checkVisible}
         toggle={toggle}
       />
+
       <div
-        className="dropdown-content"
+        className={sticky ? "dropdown-contentTwo" : "dropdown-content"}
         style={{ display: toggle ? "block" : "none" }}
       >
         <DropDownHelper
@@ -39,11 +40,13 @@ const DropDown = () => {
         />
       </div>
       <DropDownModal
+        sticky={sticky}
         DropDownData={dropDownDataCheck}
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}
       />
       <SimpleDropDownModal
+        sticky={sticky}
         SimpleDropDownData={dropDownDataCheck}
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}

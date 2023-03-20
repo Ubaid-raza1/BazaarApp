@@ -14,7 +14,6 @@ const Card = ({ productData, id, itemId }) => {
   const Plus = () => {
     setCount(count + 1);
     dispatch({ type: SHOP, payload: { count: count + 1, ...productData } });
-    // console.log("======>", state?.cardCount);
   };
 
   const Minus = () => {
@@ -58,12 +57,12 @@ const Card = ({ productData, id, itemId }) => {
             <>
               <Button
                 icon={<FaMinus />}
-                onClick={() => Minus(productData?.id)}
+                onClick={Minus}
               />
               <span>{count}</span>
             </>
           )}
-          <Button icon={<FaPlus />} onClick={() => Plus(productData)} />
+          <Button icon={<FaPlus />} onClick={Plus} />
         </div>
       </div>
     </div>

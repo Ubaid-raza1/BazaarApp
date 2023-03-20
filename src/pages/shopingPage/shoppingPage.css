@@ -1,6 +1,8 @@
 .cart {
+    padding: 10px;
     display: flex;
     width: 100%;
+    height: 15.55%;
     align-items: center;
     background-color: #fff;
     box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
@@ -10,11 +12,12 @@
 
 .shoppingMain {
     background-color: #f6f9fc;
+    font-family: open sans;
 }
 
 .ShoppingCartAndFormMain {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .cratTitleICon {
@@ -24,7 +27,7 @@
 
 
 .cartImg {
-    width: 20%;
+    width: 19%;
 }
 
 .cartImg>img {
@@ -33,7 +36,7 @@
 }
 
 .ShoppingCart {
-    width: 65%;
+    width: 66%;
     padding: 30px 0 24px 0;
 }
 
@@ -77,6 +80,15 @@
     border-radius: 5px;
     font-size: 14px;
 }
+.Minus{
+    border: 1px solid #ccc !important;
+    color: #ccc !important;
+    padding: 8px 8px;
+    display: flex;
+}
+.Minus:active{
+    background-color: #fff!important ;
+}
 
 .cartPlusMinus>Button:active {
     background-color: rgba(210, 63, 87, 0.4)
@@ -86,7 +98,7 @@
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 27%;
+    width: 32%;
     height: 50%;
     border-radius: 10px;
     background-color: #fff;
@@ -117,10 +129,13 @@ hr {
 .inputDiv {
     display: flex;
     flex-direction: column;
+    gap: 18px;
 }
 
 .inputDiv>select {
     padding: 8px 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
 }
 
 .inputDiv select>option {
@@ -156,7 +171,6 @@ hr {
 .inputDiv>input {
     border-radius: 4px;
     padding: 8px 16px;
-    margin-top: 20px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
 }
@@ -263,7 +277,7 @@ hr {
 }
 
 .ShoppingHeader {
-    padding-top: 40px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,14 +285,16 @@ hr {
 }
 
 .shoppingHeaderCart {
+    width: 127px;
     background-color: #d23f57;
     height: 32px;
     padding: 8px 16px;
     border-radius: 15px;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     align-items: center;
+   justify-content: center;
 }
 
 .shoppingCartLine {

@@ -25,7 +25,7 @@ const SideBarHelperList = ({ arr, Plus, Minus, Delete }) => {
               <span id="sideShopTxtTitle">{Ele?.title}</span>
               <span id="sideShopTxt">{`$${Ele?.prizeCurrent} X ${Ele?.count}`}</span>
               <span id="sideShopTxtAmmount">
-                {`$${Ele?.prizeCurrent * Ele?.count}`}
+                {`$${(Ele?.prizeCurrent * Ele?.count).toFixed(2)}`}
               </span>
             </span>
             <span id="sidebarShopCloseIcon">

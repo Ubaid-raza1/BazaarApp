@@ -15,6 +15,18 @@
   border-radius: 0 0 5px 5px;
 }
 
+.dropdown-contentTwo {
+  position: absolute;
+  margin-top: 11px;
+  width: 526%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  background-color: #FFFFFF;
+  z-index: 98;
+  border-radius: 0 0 5px 5px;
+  left: -15px;
+}
+
 
 
 /* .dropdown:active .dropdown-content {

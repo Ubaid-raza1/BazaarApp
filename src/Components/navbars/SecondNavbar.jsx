@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlineShopping, AiOutlineSearch } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa";
@@ -8,17 +8,31 @@ import Button from "../button/Button";
 import Sidebar from "../sideBar/Sidebar";
 import { useSelector } from "react-redux";
 import FooterNavbar from "./FooterNavbar";
+import DropDown from "../dropDown/DropDown";
+import IconButton from "../button/IconButton";
 //
 
 const SecondNavbar = () => {
   const [index, setIndex] = useState(0);
+  const [sticky, setStiky] = useState(false);
   const check = () => setIndex(1);
   const Item = useSelector((state) => state?.cardCount);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setStiky(window.scrollY > 200);
+    };
+    console.log(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   return (
-    <>
-      <div className="secondNavBar">
+    <div className={`${sticky ? "stickyMain" : "stickyMainTwo"} `}>
+      <nav className={`${sticky ? "sticky" : ""}`}>
         <div className="secondNavLogo">
           <img src={BazarLogo} alt="bazarLogo" />
+          {sticky && <DropDown sticky={sticky} DropButton={IconButton} />}
         </div>
         <div className="SecondNavInputMain">
           <div className="SecondNavInput">
@@ -50,11 +64,10 @@ const SecondNavbar = () => {
             )}
           </span>
         </div>
-      </div>
+      </nav>
 
       <Sidebar setIndex={setIndex} index={index} />
-      
-    </>
+    </div>
   );
 };
 

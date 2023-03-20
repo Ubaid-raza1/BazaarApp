@@ -10,6 +10,7 @@ const IconButton = ({
   onClick,
   onMouseEnter,
   toggle,
+  txt
 }) => {
   return (
     <ButtonWrapper
@@ -21,7 +22,7 @@ const IconButton = ({
         <span id="thirdNavIc">
           <BsFillGridFill id="iconBtnNav" />
         </span>
-        <span id="thirdNavTxt">Categories</span>
+        <span id="thirdNavTxt">{txt}</span>
       </div>
       <div
         className="thirdFaAngelLeftNavbarIcon"

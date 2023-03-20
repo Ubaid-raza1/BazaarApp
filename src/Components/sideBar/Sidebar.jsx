@@ -49,6 +49,9 @@ const Sidebar = ({ setIndex, index }) => {
           width: !!state?.cardCount?.length ? "360px" : "218px",
           overflowY: !!state?.cardCount?.length && "scroll",
         }}
+        // id={
+        //   !!state?.cardCount?.length  && "sidebarWidthOne"
+        // }
       >
         <div className="sliderButton">
           <span>
@@ -70,7 +73,7 @@ const Sidebar = ({ setIndex, index }) => {
             <div className="sidebarButtons">
               <Button
                 className={"sidebarButtonOne"}
-                value={`Checkout Now ($${AllCounts.toString()})`}
+                value={`Checkout Now ($${AllCounts.toFixed(2).toString()})`}
               />
               <Button className={"sidebarButtonTwo"} value="View Cart" />
             </div>
@@ -84,7 +87,6 @@ const Sidebar = ({ setIndex, index }) => {
           </div>
         )}
       </div>
-      
     </>
   );
 };

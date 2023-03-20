@@ -1,8 +1,19 @@
 import React from "react";
 
-const ButtonWrapper = ({ children, className, onClick, onMouseEnter }) => {
+const ButtonWrapper = ({
+  children,
+  className,
+  onClick,
+  onMouseEnter,
+  style,
+}) => {
   return (
-    <button className={className} onClick={onClick} onMouseEnter={onMouseEnter}>
+    <button
+      className={className}
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      style={style}
+    >
       {children}
     </button>
   );

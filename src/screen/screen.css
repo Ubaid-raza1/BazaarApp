@@ -443,6 +443,19 @@
     .CategoryUnder {
         width: calc(35% - 32px);
     }
+
+
+    .ShoppingCartAndFormMain {
+        flex-direction: column;
+    }
+
+    .ShoppingCart,
+    .Shopping {
+        width: 100%!important;
+    }
+    .Shopping{
+        margin-top: 0!important;
+    }
 }
 
 /* footerMain page css */

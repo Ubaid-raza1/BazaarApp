@@ -12,10 +12,14 @@ import Input from "../../Components/input/Input";
 import Textarea from "../../Components/textarea/Textarea";
 import SelectOption from "../../Components/selectOption/SelectOption";
 import ShoppingCartHelper from "../../Components/helper/shoppingCartHelper/ShoppingCartHelper";
+import { country_list, cityName } from "../../data/CountryName";
+import FooterNavbar from "../../Components/navbars/FooterNavbar";
 
 const ShoppingPage = () => {
   const state = useSelector((state) => state);
-
+  const TotalCount = state?.cardCount?.reduce((prev, cur) => {
+    return prev + (cur?.count || 0) * cur?.prizeCurrent;
+  }, 0);
   return (
     <div className="ShopingPage">
       <div className="navbars">
@@ -42,7 +46,7 @@ const ShoppingPage = () => {
           <div className="Shopping">
             <div className="shoppingTotal">
               <span>Total:</span>
-              <span>$3000</span>
+              <span>${TotalCount.toFixed(2).toString()}</span>
             </div>
             <hr />
             <div>
@@ -66,8 +70,8 @@ const ShoppingPage = () => {
               <div className="shoppingTitleTwo">Shipping Estimates</div>
               <div className="shoppingFormTwo">
                 <div className="inputDiv">
-                  <SelectOption />
-                  <SelectOption />
+                  <SelectOption data={country_list} />
+                  <SelectOption data={cityName} />
                   <Input placeholder="Zip Code" />
                 </div>
                 <div className="shoppingButton">
@@ -81,6 +85,9 @@ const ShoppingPage = () => {
       </div>
       <div className="footer">
         <Footer />
+      </div>
+      <div className="FooterNavbar">
+        <FooterNavbar />
       </div>
     </div>
   );

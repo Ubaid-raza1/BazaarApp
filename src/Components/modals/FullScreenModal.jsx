@@ -5,7 +5,6 @@ import ModalWrapper from "./ModalWrapper";
 
 const FullScreenModal = ({ item, setVisible, visible }) => {
   const [fullScreenData, setFullScreenData] = useState();
-  // const modalData = item?.fullScreen;
 
   const check = (data) => {
     setFullScreenData(data);
@@ -19,6 +18,7 @@ const FullScreenModal = ({ item, setVisible, visible }) => {
             style={{
               display: visible ? "block" : "none",
             }}
+            
           >
             <FullScreenModalList item={item} check={check} />
           </div>

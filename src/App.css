@@ -26,7 +26,9 @@
 @media (min-width: 1280px) {
 
     .firstNav,
-    .secondNavBar,
+    /* nav, */
+    .sticky,
+    .stickyMainTwo,
     .thirdNavBar,
     .courselMain,
     .bigDiscountMain,
@@ -41,7 +43,8 @@
     .opticsWatch,
     .mobile,
     .car,
-    .footerMain {
+    .footerMain,
+    .ShoppingCartAndFormMain {
         max-width: 1280px;
         margin: auto;
     }
@@ -57,7 +60,9 @@
     .firstNav,
     .NavbarMain,
     .courselMain,
-    .secondNavBar,
+    /* nav, */
+    .stickyMainTwo,
+    .sticky,
     .thirdNavBar,
     .bigDiscountMain,
     .mainCategories,
@@ -71,15 +76,14 @@
     .opticsWatch,
     .mobile,
     .car,
-    .footerMain {
+    .footerMain,
+    .ShoppingCartAndFormMain,
+    .ShoppingHeader {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    /* .cardCoursel {
-        margin-left: 24px;
-        margin-right: 24px;
-    } */
+
 }
 
 @media (max-width: 599px) {
@@ -87,7 +91,10 @@
     .firstNav,
     .NavbarMain,
     .courselMain,
-    .secondNavBar,
+    /* nav, */
+    .stickyMainTwo,
+    .stickyMain,
+    .sticky,
     .thirdNavBar,
     .bigDiscountMain,
     .mainCategories,
@@ -101,7 +108,8 @@
     .opticsWatch,
     .mobile,
     .car,
-    .footerMain {
+    .footerMain,
+    .ShoppingCartAndFormMain {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -197,6 +205,10 @@
     .firstNavPlusIcon {
         display: block;
     }
+
+    .ShoppingHeader {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:949px) {
@@ -213,5 +225,22 @@
 @media only screen and (max-width:900px) {
     .FooterNavbar {
         display: block !important;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .cart {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .cartImg {
+        width: 100%;
+    }
+
+    .cratTitleICon>div:nth-child(2) {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
