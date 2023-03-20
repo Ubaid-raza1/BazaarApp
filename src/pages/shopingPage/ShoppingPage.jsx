@@ -2,7 +2,7 @@ import React from "react";
 import FirstNavbar from "../../Components/navbars/FirstNavbar";
 import Navbar from "../../Components/navbars/Navbar";
 import SecondNavbar from "../../Components/navbars/SecondNavbar";
-import ThirdNavbar from "../../Components/navbars/ThirdNavbar";
+import ThirdNavbar from "../../Components/navbars/ThirdNavbar.jsx";
 import Footer from "../../screen/Footer";
 import "./shoppingPage.css";
 import ShoppingCard from "../../Components/cards/ShoppingCard";
