@@ -2,7 +2,7 @@ import React from "react";
 import FirstNavbar from "../../Components/navbars/FirstNavbar";
 import Navbar from "../../Components/navbars/Navbar";
 import SecondNavbar from "../../Components/navbars/SecondNavbar";
-import ThirdNavbar from "../../Components/navbars/ThirdNavbar";
+import ThirdNavbar from "../../Components/navbars/ThirdNavbar.jsx";
 import BigDiscounts from "../../screen/BigDiscounts";
 import Cars from "../../screen/Cars";
 import Categories from "../../screen/Categories";
