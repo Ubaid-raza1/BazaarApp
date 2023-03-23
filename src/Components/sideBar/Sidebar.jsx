@@ -15,6 +15,8 @@ const Sidebar = ({ setIndex, index }) => {
     0
   );
 
+  console.log("===>", index);
+  
   const Plus = (item) => {
     dispatch({
       type: SHOP,
@@ -49,9 +51,6 @@ const Sidebar = ({ setIndex, index }) => {
           width: !!state?.cardCount?.length ? "360px" : "218px",
           overflowY: !!state?.cardCount?.length && "scroll",
         }}
-        // id={
-        //   !!state?.cardCount?.length  && "sidebarWidthOne"
-        // }
       >
         <div className="sliderButton">
           <span>

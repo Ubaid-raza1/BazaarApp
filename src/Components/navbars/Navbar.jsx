@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaRegUser, FaBars } from "react-icons/fa";
 import { AiOutlineShopping, AiOutlineSearch } from "react-icons/ai";
 import Logo from "../../images/bazaarSecondNavLogo.svg";
-import { useState } from "react";
 import Sidebar from "../sideBar/Sidebar";
 import { useSelector } from "react-redux";
 import FullScreenSideBar from "../sideBar/FullScreenSideBar";
 
 const Navbar = () => {
   const [index, setIndex] = useState(0);
+  const [sticky, setSticky] = useState(false);
   const [indexTwo, setIndexTwo] = useState(0);
   const Item = useSelector((state) => state?.cardCount);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 200);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
   return (
-    <div className="NavbarMain">
+    <div className={`${sticky ? "NavbarMainOne" : "NavbarMain"}`}>
       <div className="navFirstFaBarsIcon">
         <FaBars id="NavfaBar" onClick={() => setIndexTwo(1)} />
       </div>

@@ -11,6 +11,9 @@
 
 .DropDownModal,
 .simpleDropDownModal,
+.simpleDropDownModalTwo,
+.DropDownModalChild,
+.DropDownModalChildOne,
 .DropDownModalTwo,
 .modal,
 .FourComponentModal,
@@ -41,13 +44,7 @@
     left: 100%;
     margin-left: 15px;
 }
-.DropDownModalTwo{
-    position: absolute;
-    margin-top: 11px;
-    width: 57rem;
-    left: 255px;
-    margin-left: 15px;
-}
+
 
 .simpleDropDownModal {
     position: absolute;
@@ -56,20 +53,36 @@
     width: 100%;
     margin-left: 15px;
 }
+
 .simpleDropDownModalTwo {
     position: absolute;
     margin-top: 11px;
-    left: 260px;
-    width: 21rem;
+    left: 257px;
+    width: 18.5rem;
     margin-left: 15px;
 }
-
+.DropDownModalChild{
+    position: absolute;
+    left: 42rem;
+    width: 200%;
+    top: 10px;
+}
+.DropDownModalChildOne{
+    position: absolute;
+    left: 39rem;
+    top: 10px;
+    width: 41.8rem;
+    border-radius: 10px;
+}
 .DropDownModalTwo {
     position: absolute;
     margin-top: 11px;
-    left: 42rem;
-    width: 40rem;
+    left: 272px;
+    width: 54rem;
+    border-radius: 10px;
 }
+
+
 
 .modal {
     position: absolute;
@@ -287,7 +300,7 @@
 }
 
 .modalLeftSide2 {
-    width: 58vw !important;
+    /* width: 58vw !important; */
 }
 
 .modalPara {
@@ -297,9 +310,7 @@
 .modalheightSet {
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    min-height: 410px;
-    justify-content: space-evenly;
+
 }
 
 .DropDownModalHeight {
@@ -344,7 +355,7 @@
     font-weight: 700;
 }
 
-.simpleDropDownModal ul>li {
+.simpleDropDownModal ul>li ,.simpleDropDownModalTwo ul>li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -368,7 +379,7 @@
     background-color: #f5f5f5;
 }
 
-.simpleDropDownModal ul>li:hover {
+.simpleDropDownModal ul>li:hover ,.simpleDropDownModalTwo ul>li:hover {
     color: #D23F57;
     background-color: #f5f5f5;
 }

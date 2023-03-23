@@ -3,11 +3,11 @@ import ModalSameCls from "../helper/modalHelp/ModalSameCls";
 import ModalWrapper from "./ModalWrapper";
 import ManModalImg from "../../images/manModal-img.webp";
 
-const DropDownModalTwo = ({ Items, setModalVisible }) => {
+const DropDownModalTwo = ({ Items, setModalVisible, sticky }) => {
   return (
     <div className="DropDownModalTwoMain">
       <ModalWrapper
-        className="DropDownModalTwo"
+        className={sticky ? "DropDownModalChildOne" : "DropDownModalChild"}
         // onMouseLeave={() => setModalVisible((prev)=>!prev)}
       >
         {Items?.map((i) => {

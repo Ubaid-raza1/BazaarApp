@@ -7,7 +7,7 @@ const ThirdSlider = ({ activeIndex }) => {
   return (
     <div className="thirdSliderMain">
       <CardCoursel style={{ transform: `translateX(${activeIndex}%)` }}>
-        <SlidersItems style={{ width: "168%" }}>
+        <SlidersItems id="thirdSliderWidth">
           {topCategoryData?.map((item) => {
             return (
               <div className="topCategiesImgTxt">

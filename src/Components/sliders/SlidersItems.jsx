@@ -1,9 +1,9 @@
 import React from "react";
 import "./sliders.css";
 
-const SlidersItems = ({ children, style }) => {
+const SlidersItems = ({ children, style, id }) => {
   return (
-    <div className="carousel-item" style={style}>
+    <div className="carousel-item" style={style} id={id}>
       {children}
     </div>
   );

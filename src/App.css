@@ -26,7 +26,7 @@
 @media (min-width: 1280px) {
 
     .firstNav,
-    /* nav, */
+    .NavbarMainOne,
     .sticky,
     .stickyMainTwo,
     .thirdNavBar,
@@ -60,7 +60,7 @@
     .firstNav,
     .NavbarMain,
     .courselMain,
-    /* nav, */
+    .NavbarMainOne,
     .stickyMainTwo,
     .sticky,
     .thirdNavBar,
@@ -91,7 +91,7 @@
     .firstNav,
     .NavbarMain,
     .courselMain,
-    /* nav, */
+    .NavbarMainOne,
     .stickyMainTwo,
     .stickyMain,
     .sticky,
@@ -209,6 +209,9 @@
     .ShoppingHeader {
         display: none;
     }
+    .NavbarMainOne{
+        height: 64px;
+    }
 }
 
 @media only screen and (max-width:949px) {
@@ -218,6 +221,9 @@
 
     .topCategories>.topCategiesImgTxt:nth-child(3) {
         display: none;
+    }
+    #thirdSliderWidth{
+        width: 254%;
     }
 }
 

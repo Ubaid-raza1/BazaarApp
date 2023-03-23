@@ -80,6 +80,9 @@
 /* second navbar */
 .secondNavLogo {
     width: 8.5%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
 
 .secondNavLogo>img {
@@ -93,7 +96,7 @@ nav {
 }
 
 .stickyMain {
-
+    display: block;
     left: 0px;
     right: 0px;
     z-index: 1500;
@@ -461,6 +464,10 @@ nav {
     padding-top: 4px;
 }
 
+.stickyMain {
+    display: block;
+}
+
 /* NavbarMain  css*/
 
 
@@ -481,6 +488,23 @@ nav {
         display: flex;
         height: 84px;
         align-items: center;
+    }
+
+    .stickyMainTwo {
+        display: none;
+    }
+
+    .NavbarMainOne {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+        display: flex;
+        height: 84px;
+        align-items: center;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;
     }
 
     .navFirstFaBarsIcon {
@@ -536,6 +560,10 @@ nav {
         position: absolute;
         top: 5px;
         right: 8px;
+    }
+
+    .stickyMain {
+        display: none;
     }
 }
 

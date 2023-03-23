@@ -107,6 +107,9 @@
     margin: 4px;
 }
 
+#thirdSliderWidth {
+    width: 168%;
+}
 
 .thirdSliderMain,
 .fourSliderMain {

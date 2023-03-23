@@ -34,6 +34,7 @@ const DropDown = ({ DropButton, txt, sticky }) => {
         style={{ display: toggle ? "block" : "none" }}
       >
         <DropDownHelper
+        
           data={dropData}
           check={check}
           setModalVisible={setModalVisible}

@@ -15,7 +15,11 @@ import IconButton from "../button/IconButton";
 const SecondNavbar = () => {
   const [index, setIndex] = useState(0);
   const [sticky, setStiky] = useState(false);
-  const check = () => setIndex(1);
+  const check = () => {
+    setIndex(1);
+  };
+ 
+
   const Item = useSelector((state) => state?.cardCount);
 
   useEffect(() => {
