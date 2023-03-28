@@ -20,8 +20,7 @@
 }
 
 #cardWidth1 {
-    width: 50%;
-
+    width: 289.25px;
 }
 
 
@@ -144,18 +143,20 @@
 #simpleCardIcons {
     font-size: 30px;
 }
-.simpleCardMain{
+
+.simpleCardMain {
     display: flex;
     gap: 25px;
 }
 
-.simpleCardMain>div{
-display: flex;
-gap: 25px;
-width: 53.3%;
+.simpleCardMain>div {
+    display: flex;
+    gap: 25px;
+    width: 53.3%;
 }
+
 .simpleCard {
-    width: calc(100% - 20px) ;
+    width: calc(100% - 20px);
     text-align: center;
     background-color: #fff;
     padding: 3rem 0;
@@ -163,7 +164,8 @@ width: 53.3%;
     box-shadow: 0px 1px 3px rgb(3 0 71 / 9%);
     cursor: pointer;
 }
-.simpleCard>div{
+
+.simpleCard>div {
     /* display: flex; */
 }
 
@@ -285,15 +287,17 @@ width: 53.3%;
     box-sizing: 10px;
     border-radius: 10px;
     padding-bottom: 15px;
+    width: 184.5px;
 }
 
 .bigDiscountPrizeList {
+    padding-left: 10px;
+    display: flex;
+    gap: 8px;
     padding-top: 10px;
 }
 
-.bigDiscountPrizeList>span {
-    padding: 10px;
-}
+
 
 .bigDiscountPrizeList>span:nth-child(1) {
     color: #D23F57;
@@ -306,3 +310,9 @@ width: 53.3%;
 
 /* bigDiscount css */
 
+
+
+.TopCategoryMain {
+    display: flex;
+    gap: 25px;
+}

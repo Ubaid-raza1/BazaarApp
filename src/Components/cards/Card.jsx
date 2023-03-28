@@ -7,10 +7,11 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SHOP } from "../../reducer/Action";
 
-const Card = ({ productData, id, itemId }) => {
+const Card = ({ productData, id, itemId, width }) => {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
   const [count, setCount] = useState(0);
+
   const Plus = () => {
     setCount(count + 1);
     dispatch({ type: SHOP, payload: { count: count + 1, ...productData } });
@@ -28,9 +29,8 @@ const Card = ({ productData, id, itemId }) => {
     const currentItem = state?.cardCount?.find((item) => item?.id === itemId);
     setCount(currentItem?.count || 0);
   }, [state?.cardCount]);
-
   return (
-    <div className="card" id={id?.cardWidth}>
+    <div className="card" style={{ width: width }} id={id?.cardWidth}>
       <div className="cardBody">
         <div className="cradImgTxt">
           <img src={productData?.cardImg} alt="cardimg" />
@@ -55,10 +55,7 @@ const Card = ({ productData, id, itemId }) => {
         <div className="CardBtn">
           {count > 0 && (
             <>
-              <Button
-                icon={<FaMinus />}
-                onClick={Minus}
-              />
+              <Button icon={<FaMinus />} onClick={Minus} />
               <span>{count}</span>
             </>
           )}

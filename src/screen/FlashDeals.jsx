@@ -5,18 +5,39 @@ import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import SecondSlider from "../Components/sliders/SecondSlider";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-const id = { cardWidth: "cardWidth1" };
-
 const FlashDeals = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   const Next = () => {
-    if (activeIndex > -74) setActiveIndex(activeIndex - 18.5);
-    else setActiveIndex(0);
+    if (window.innerWidth < 500) {
+      if (activeIndex > -87.5) setActiveIndex(activeIndex - 12.5);
+      else setActiveIndex(0);
+    } else if (window.innerWidth < 650) {
+      if (activeIndex > -75) setActiveIndex(activeIndex - 12.5);
+      else setActiveIndex(0);
+    } else if (window.innerWidth >= 960) {
+      if (activeIndex > -50) setActiveIndex(activeIndex - 12.5);
+      else setActiveIndex(0);
+    } else if (window.innerWidth < 960) {
+      if (activeIndex > -62.5) setActiveIndex(activeIndex - 12.5);
+      else setActiveIndex(0);
+    }
   };
 
   const Prev = () => {
-    if (activeIndex < 0) setActiveIndex(activeIndex + 18.5);
-    else setActiveIndex(-74);
+    if (window.innerWidth < 500) {
+      if (activeIndex < 0) setActiveIndex(activeIndex + 12.5);
+      else setActiveIndex(-87.5);
+    } else if (window.innerWidth < 650) {
+      if (activeIndex < 0) setActiveIndex(activeIndex + 12.5);
+      else setActiveIndex(-75);
+    } else if (window.innerWidth >= 960) {
+      if (activeIndex < 0) setActiveIndex(activeIndex + 12.5);
+      else setActiveIndex(-50);
+    } else if (window.innerWidth < 960) {
+      if (activeIndex < 0) setActiveIndex(activeIndex + 12.5);
+      else setActiveIndex(-62.5);
+    }
   };
 
   return (

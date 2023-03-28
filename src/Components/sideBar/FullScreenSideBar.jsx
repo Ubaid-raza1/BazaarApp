@@ -23,54 +23,56 @@ const FullScreenSideBar = ({ indexTwo, setIndexTwo }) => {
           {DropDowntwo?.map((item) => {
             return (
               <>
-                <div
-                  className="fullScreenSideBarName"
-                  onClick={() => check(item)}
-                >
-                  {item?.name} {item?.icon}
-                </div>
+                <>
+                  <div
+                    className="fullScreenSideBarName"
+                    onClick={() => check(item)}
+                  >
+                    {item?.name} {item?.icon}
+                  </div>
+                </>
+                {/* <>
+                  {item?.name === "Home" && (
+                    <div
+                      className="fullScreenSideBarChild"
+                      style={{
+                        display: item?.name === "Home" ? "block" : "none",
+                      }}
+                    >
+                      {getData?.items?.home?.map((ele) => (
+                        <p>{ele}</p>
+                      ))}
+                    </div>
+                  )}
+                  {item?.name === "Mega Menu" && (
+                    <div
+                      style={{
+                        display:
+                          getData?.name === "Mega Menu" ? "block" : "none",
+                      }}
+                      className="fullScreenSideBarChild"
+                    >
+                      {getData?.items?.home?.map((ele) => (
+                        <p>{ele?.fullScreen[0]?.name}</p>
+                      ))}
+                    </div>
+                  )}
+                  {item?.name === "Full Screen Menu" && (
+                    <div className="fullScreenSideBarChild">ubaid Raza 3</div>
+                  )}
+                  {item?.name === "Pages" && (
+                    <div className="fullScreenSideBarChild">ubaid Raza 4</div>
+                  )}
+                  {item?.name === "User Account" && (
+                    <div className="fullScreenSideBarChild">ubaid Raza 5</div>
+                  )}
+                  {item?.name === "Vendor Account" && (
+                    <div className="fullScreenSideBarChild">ubaid Raza 6</div>
+                  )}
+                </> */}
               </>
             );
           })}
-          <>
-            {/* {item?.name === "Home" && (
-                  <div
-                    className="fullScreenSideBarChild"
-                    style={{
-                      display: item?.name === "Home" ? "block" : "none",
-                    }}
-                  >
-                    {getData?.items?.home?.map((ele) => (
-                      <p>{ele}</p>
-                    ))}
-                  </div>
-                )}
-                {item?.name === "Mega Menu" && (
-                  <div
-                    style={{
-                      display:
-                        getData?.name === "Mega Menu"
-                          ? "block"
-                          : "none",
-                    }}
-                    className="fullScreenSideBarChild"
-                  >
-                    ubaid Raza
-                  </div>
-                )}
-                {item?.name === "Full Screen Menu" && (
-                  <div className="fullScreenSideBarChild">ubaid Raza 3</div>
-                )}
-                {item?.name === "Pages" && (
-                  <div className="fullScreenSideBarChild">ubaid Raza 4</div>
-                )}
-                {item?.name === "User Account" && (
-                  <div className="fullScreenSideBarChild">ubaid Raza 5</div>
-                )}
-                {item?.name === "Vendor Account" && (
-                  <div className="fullScreenSideBarChild">ubaid Raza 6</div>
-                )} */}
-          </>
         </div>
       </div>
     </div>

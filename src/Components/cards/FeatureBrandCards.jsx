@@ -1,11 +1,11 @@
 import React from "react";
 
-const FeatureBrandCards = ({ productData, className }) => {
+const FeatureBrandCards = ({ productData, className, width }) => {
   return (
     <>
       {productData?.map((item) => {
         return (
-          <div className={className.cardWidth}>
+          <div className={className.cardWidth} style={{ width: width }}>
             <img src={item?.img} alt="" id={className?.imageWidth} />
             <div className="featureBrandTxt">{item?.text}</div>
             <div className="featureBrandTxt">{item?.price}</div>

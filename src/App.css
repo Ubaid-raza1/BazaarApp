@@ -209,7 +209,8 @@
     .ShoppingHeader {
         display: none;
     }
-    .NavbarMainOne{
+
+    .NavbarMainOne {
         height: 64px;
     }
 }
@@ -222,7 +223,8 @@
     .topCategories>.topCategiesImgTxt:nth-child(3) {
         display: none;
     }
-    #thirdSliderWidth{
+
+    #thirdSliderWidth {
         width: 254%;
     }
 }
@@ -231,6 +233,12 @@
 @media only screen and (max-width:900px) {
     .FooterNavbar {
         display: block !important;
+    }
+}
+
+@media only screen and (max-width:649px) {
+    #thirdSliderWidth {
+        width: 518%;
     }
 }
 

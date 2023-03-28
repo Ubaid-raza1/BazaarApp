@@ -1,20 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import CardCoursel from "./CardCoursel";
 import SlidersItems from "./SlidersItems";
 import { flashDeal } from "../../data/FlashDeal";
 import Card from "../cards/Card";
+import { useEffect } from "react";
+import { useState } from "react";
+import { getCardWidth } from "../helper/SliderHelp/SecondSliderHelper";
 
 const SecondSlider = ({ activeIndex }) => {
   const id = { cardWidth: "cardWidth1" };
+  const ref = useRef(null);
+  const [width, setWidth] = useState(undefined);
+  useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => {
+        setWidth(getCardWidth(ref));
+      },
+      []
+    );
+  }, [ref?.current]);
+
   return (
-    <div className="SecondSliderMain">
+    <div className="SecondSliderMain" ref={ref}>
       <CardCoursel style={{ transform: `translateX(${activeIndex}%)` }}>
-        <SlidersItems style={{ width: "148%" }}>
+        <SlidersItems>
           {flashDeal?.map((item) => {
-            return <Card productData={item} id={id} itemId={item?.id} />;
-          })}
-          {flashDeal?.map((item) => {
-            return <Card productData={item} id={id} itemId={item?.id} />;
+            return (
+              <Card
+                productData={item}
+                id={id}
+                itemId={item?.id}
+                width={width}
+              />
+            );
           })}
         </SlidersItems>
       </CardCoursel>
