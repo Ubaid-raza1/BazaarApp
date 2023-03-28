@@ -49,6 +49,21 @@
     font-size: 10px;
 }
 
+.cardIcon {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#cardIconOne,
+#cardIconTwo {
+    font-size: 18px;
+}
+#cardIconTwo{
+  
+}
 #cardOfferPercen {
     font-size: 10px;
     padding-right: 3px;
