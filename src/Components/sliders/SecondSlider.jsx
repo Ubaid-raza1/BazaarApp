@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { getCardWidth } from "../helper/SliderHelp/SecondSliderHelper";
 
-const SecondSlider = ({ activeIndex }) => {
+const SecondSlider = ({ activeIndex, getCardData }) => {
   const id = { cardWidth: "cardWidth1" };
   const ref = useRef(null);
   const [width, setWidth] = useState(undefined);
@@ -28,6 +28,7 @@ const SecondSlider = ({ activeIndex }) => {
           {flashDeal?.map((item) => {
             return (
               <Card
+                getCardData={getCardData}
                 productData={item}
                 id={id}
                 itemId={item?.id}

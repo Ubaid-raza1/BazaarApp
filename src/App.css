@@ -52,7 +52,13 @@
     .newArival>div:nth-child(2)>.featureBrandCard2:nth-child(1) {
         display: none;
     }
+}
 
+@media (min-width: 959px) {
+    .CardModalBody {
+        max-width: 900px;
+        padding: 20px 24px;
+    }
 }
 
 @media (min-width: 600px) {

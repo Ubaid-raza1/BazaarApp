@@ -99,7 +99,7 @@ nav {
     display: block;
     left: 0px;
     right: 0px;
-    z-index: 1500;
+    z-index: 1;
     position: fixed;
     top: 0px;
     box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;

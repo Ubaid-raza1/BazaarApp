@@ -16,13 +16,16 @@ const Sidebar = ({ setIndex, index }) => {
   );
 
   console.log("===>", index);
-  
+
   const Plus = (item) => {
     dispatch({
       type: SHOP,
       payload: { count: item.count++, ...item },
     });
   };
+  index === 1
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "scroll");
 
   const Minus = (item) => {
     if (item?.count > 1) {

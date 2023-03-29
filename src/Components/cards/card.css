@@ -60,10 +60,11 @@
 #cardIconOne,
 #cardIconTwo {
     font-size: 18px;
+    cursor: pointer;
 }
-#cardIconTwo{
-  
-}
+
+#cardIconTwo {}
+
 #cardOfferPercen {
     font-size: 10px;
     padding-right: 3px;

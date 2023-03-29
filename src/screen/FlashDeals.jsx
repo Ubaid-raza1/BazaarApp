@@ -4,9 +4,21 @@ import { BsLightningChargeFill } from "react-icons/bs";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import SecondSlider from "../Components/sliders/SecondSlider";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import CardModal from "../Components/modals/CardModal";
 
 const FlashDeals = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [CardModalData, setCardModalData] = useState();
+  const [open, setOpen] = useState(false);
+
+  !!open
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "scroll");
+
+  const getCardData = (CardData) => {
+    setCardModalData(CardData);
+    setOpen(true);
+  };
 
   const Next = () => {
     if (window.innerWidth < 500) {
@@ -41,16 +53,19 @@ const FlashDeals = () => {
   };
 
   return (
-    <div className="flashDealMain">
-      <IconTxtHeader Icon={<BsLightningChargeFill />} text="Flash Deal" />
-      <div className="flashDeal">
-        <SecondSlider activeIndex={activeIndex} />
-        <div className="cardIndicator">
-          <BsArrowLeftCircleFill id="PrevIcon" onClick={Prev} />
-          <BsArrowRightCircleFill id="NextIcon" onClick={Next} />
+    <>
+      <div className="flashDealMain">
+        <IconTxtHeader Icon={<BsLightningChargeFill />} text="Flash Deal" />
+        <div className="flashDeal">
+          <SecondSlider activeIndex={activeIndex} getCardData={getCardData} />
+          <div className="cardIndicator">
+            <BsArrowLeftCircleFill id="PrevIcon" onClick={Prev} />
+            <BsArrowRightCircleFill id="NextIcon" onClick={Next} />
+          </div>
         </div>
       </div>
-    </div>
+      <CardModal open={open} setOpen={setOpen} CardData={CardModalData} />
+    </>
   );
 };
 

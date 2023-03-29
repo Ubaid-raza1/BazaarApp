@@ -7,8 +7,9 @@ import StarIcons from "../starIcons/StarIcons";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { SHOP } from "../../reducer/Action";
+import CardModal from "../modals/CardModal";
 
-const Card = ({ productData, id, itemId, width }) => {
+const Card = ({ productData, id, itemId, width, getCardData }) => {
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
   const [count, setCount] = useState(0);
@@ -27,13 +28,15 @@ const Card = ({ productData, id, itemId, width }) => {
       payload: { count: count - 1, ...productData },
     });
   };
-  const getCardData = (ModalData) => {
-    console.log("=====>ModalData=====>", ModalData);
-  };
+  // const getCardData = (ModalData) => {
+  //   setCardModalData(ModalData);
+  //   // console.log("=====>ModalData=====>", ModalData);
+  // };
   useEffect(() => {
     const currentItem = state?.cardCount?.find((item) => item?.id === itemId);
     setCount(currentItem?.count || 0);
   }, [state?.cardCount]);
+
   return (
     <div
       className="card"

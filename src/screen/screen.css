@@ -451,11 +451,18 @@
 
     .ShoppingCart,
     .Shopping {
-        width: 100%!important;
+        width: 100% !important;
     }
-    .Shopping{
-        margin-top: 0!important;
+
+    .Shopping {
+        margin-top: 0 !important;
     }
+
+    .CardModalBody {
+        flex-direction: column;
+    }
+
+    
 }
 
 /* footerMain page css */
