@@ -9,7 +9,6 @@ const FullScreenSideBar = ({ indexTwo, setIndexTwo }) => {
     setGetData(data);
     setToogle((prev) => !prev);
   };
-  console.log(getData);
   return (
     <div
       className="fullScreenSideBarMain"
@@ -31,7 +30,7 @@ const FullScreenSideBar = ({ indexTwo, setIndexTwo }) => {
                     {item?.name} {item?.icon}
                   </div>
                 </>
-                {/* <>
+                <>
                   {item?.name === "Home" && (
                     <div
                       className="fullScreenSideBarChild"
@@ -52,9 +51,7 @@ const FullScreenSideBar = ({ indexTwo, setIndexTwo }) => {
                       }}
                       className="fullScreenSideBarChild"
                     >
-                      {getData?.items?.home?.map((ele) => (
-                        <p>{ele?.fullScreen[0]?.name}</p>
-                      ))}
+                      Mega Menu
                     </div>
                   )}
                   {item?.name === "Full Screen Menu" && (
@@ -69,7 +66,7 @@ const FullScreenSideBar = ({ indexTwo, setIndexTwo }) => {
                   {item?.name === "Vendor Account" && (
                     <div className="fullScreenSideBarChild">ubaid Raza 6</div>
                   )}
-                </> */}
+                </>
               </>
             );
           })}

@@ -28,10 +28,8 @@ const Card = ({ productData, id, itemId, width, getCardData }) => {
       payload: { count: count - 1, ...productData },
     });
   };
-  // const getCardData = (ModalData) => {
-  //   setCardModalData(ModalData);
-  //   // console.log("=====>ModalData=====>", ModalData);
-  // };
+ 
+  
   useEffect(() => {
     const currentItem = state?.cardCount?.find((item) => item?.id === itemId);
     setCount(currentItem?.count || 0);

@@ -40,7 +40,9 @@ const Cars = () => {
           </div>
         </div>
       </div>
-      <CardModal open={open} setOpen={setOpen} CardData={CardModalData} />
+      {!!open && (
+        <CardModal open={open} setOpen={setOpen} CardData={CardModalData} />
+      )}
     </>
   );
 };

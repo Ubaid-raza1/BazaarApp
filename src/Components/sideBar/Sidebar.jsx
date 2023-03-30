@@ -15,7 +15,6 @@ const Sidebar = ({ setIndex, index }) => {
     0
   );
 
-  console.log("===>", index);
 
   const Plus = (item) => {
     dispatch({

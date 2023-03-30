@@ -26,7 +26,6 @@ const SecondNavbar = () => {
     const handleScroll = () => {
       setStiky(window.scrollY > 200);
     };
-    console.log(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });

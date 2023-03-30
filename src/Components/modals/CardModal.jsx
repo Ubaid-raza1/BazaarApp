@@ -1,18 +1,45 @@
-import React from "react";
-import img from "../../images/budiCar.webp";
+import React, { useEffect } from "react";
 import Button from "../button/Button";
 import StarIcons from "../starIcons/StarIcons";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { SHOP } from "../../reducer/Action";
 
 const CardModal = ({ CardData, open, setOpen }) => {
-  //   console.log("CardData++++++>", CardData);
-  console.log(open, "state===>");
+  const [count, setCount] = useState(0);
+  const state = useSelector((state) => state);
+  const dispatch = useDispatch();
+
+  !!count || !!open
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "scroll");
+
+  const Plus = () => {
+    dispatch({ type: SHOP, payload: { count: count + 1, ...CardData } });
+    // setCount(count + 1);
+  };
+  const Minus = () => {
+    // if (count > 0) {
+    //   setCount(count - 1);
+    // }
+    dispatch({ type: SHOP, payload: { count: count - 1, ...CardData } });
+  };
+  useEffect(() => {
+    const currentItem = state?.cardCount?.find(
+      (item) => item?.id === CardData?.id
+    );
+    console.log(currentItem?.count);
+    setCount(currentItem?.count || 0);
+  }, [state?.cardCount]);
+
   return (
     <>
       <div
-        onClick={() => console.log("ubaid s",false)}
+        onClick={() => setOpen(false)}
         className="CardModalFirst"
-        style={{ display: !!open ? "block" : "none", backgroundColor: "red" }}
+        style={{ display: !!open ? "block" : "none" }}
       ></div>
       <div
         className="CardModalSecond"
@@ -27,9 +54,7 @@ const CardModal = ({ CardData, open, setOpen }) => {
           </div>
           <div className="CardModalSecondBody">
             <h2>{CardData?.title}</h2>
-            {/* <h2>Budi 2017</h2> */}
             <p>CATEGORY: Cosmatic</p>
-            {/* <h1>$299.00</h1> */}
             <h1>{CardData?.prizeCurrent}</h1>
             <div className="CardModalSecondStar">
               <span>
@@ -45,7 +70,19 @@ const CardModal = ({ CardData, open, setOpen }) => {
             <hr />
 
             <div>
-              <Button value="Add to Cart" />
+              {!!count ? (
+                <span className="AddCart">
+                  <Button icon={<FaMinus />} onClick={Minus} />
+                  <span>{count}</span>
+                  <Button icon={<FaPlus />} onClick={Plus} />
+                </span>
+              ) : (
+                <Button
+                  value="Add to Cart"
+                  className="AddCartBtn"
+                  onClick={Plus}
+                />
+              )}
             </div>
           </div>
         </div>
