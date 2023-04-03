@@ -25,7 +25,7 @@
 }
 
 #sidebarWidthTwo {
-    width: 360px!important;
+    width: 360px !important;
 }
 
 
@@ -42,13 +42,23 @@
     width: 100%;
 }
 
+.fullScreen {
+
+    overflow-y: scroll;
+}
+
 .fullScreenSideBarData {
+    /* max-width: 500px;
+    margin: auto;
+    position: relative;
+    height: 100%;
+    padding: 64px 40px;
+    overflow-y: scroll; */
     margin: auto;
     position: relative;
     height: 100vh;
     padding: 64px 40px;
-    width: 100%;
-    overflow-y: scroll;
+    width: 500px;
 }
 
 .fullScreenSideBarName {
@@ -57,8 +67,6 @@
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    width: 50%;
-    margin: auto;
     padding: 12px 0;
 }
 
@@ -72,7 +80,6 @@
 .fullScreenSideBarCloseIcon {
     display: flex;
     justify-content: end;
-    width: 75%;
 }
 
 .emptyItem {
@@ -221,4 +228,24 @@
 #minus:active {
     background-color: #FFF !important;
     color: #ccc;
+}
+
+.fullScreenData {
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.fullScreenData>p {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.FullScreenSidebarTwo{
+    margin-left: 14px;
+    margin-right: 14px;
+
+}
+.FullScreenSidebarTwo > p{
+    padding: 15px 0;
 }

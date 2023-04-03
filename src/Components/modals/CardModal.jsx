@@ -18,12 +18,8 @@ const CardModal = ({ CardData, open, setOpen }) => {
 
   const Plus = () => {
     dispatch({ type: SHOP, payload: { count: count + 1, ...CardData } });
-    // setCount(count + 1);
   };
   const Minus = () => {
-    // if (count > 0) {
-    //   setCount(count - 1);
-    // }
     dispatch({ type: SHOP, payload: { count: count - 1, ...CardData } });
   };
   useEffect(() => {

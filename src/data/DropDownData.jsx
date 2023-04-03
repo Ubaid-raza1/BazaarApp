@@ -159,45 +159,73 @@ export const DropDowntwo = [
     name: "Mega Menu",
     isFourComp: true,
     icon: <FaAngleDown />,
-    megaMenu: {
-      home: [
-        "Home",
-        "Market 1",
-        "Furniture",
-        "Grocery-v1",
-        "Grocery-v2",
-        "Grocery-v3",
-        "Health and Beauty",
-        "Fashion",
-        "Gift Store",
-        "Gadget",
-      ],
-      userAccount: [
-        "User Account",
-        "Order List",
-        "Order Details",
-        "View Profile",
-        "Edit Profile",
-        "Address List",
-        "Add Address",
-        "All tickets",
-        "Ticket details",
-        "Wishlist",
-      ],
-      vendorAccount: ["Vendor Account", "Dashboard", "Profile"],
-      product: ["Product", "All Products", "Add/Edit Product"],
-      order: ["Orders", "All Orders", "Order Detail"],
-      salePage: ["Sale Page", " Sales Version 1", "Sales Version 2"],
-      shop: [
-        " Shop",
-        "Search product",
-        "Single product",
-        "Cart",
-        "Checkout",
-        "Alternative Checkout",
-        "Order confirmation",
-      ],
-    },
+    megaMenu: [
+      {
+        name: "Home",
+        iconDown: <FaAngleDown />,
+        home: [
+          "Home",
+          "Market 1",
+          "Furniture",
+          "Grocery-v1",
+          "Grocery-v2",
+          "Grocery-v3",
+          "Health and Beauty",
+          "Fashion",
+          "Gift Store",
+          "Gadget",
+        ],
+      },
+      {
+        name: "User Account",
+        iconDown: <FaAngleDown />,
+        userAccount: [
+          "User Account",
+          "Order List",
+          "Order Details",
+          "View Profile",
+          "Edit Profile",
+          "Address List",
+          "Add Address",
+          "All tickets",
+          "Ticket details",
+          "Wishlist",
+        ],
+      },
+      {
+        name: "Vendor Account",
+        iconDown: <FaAngleDown />,
+        vendorAccount: ["Vendor Account", "Dashboard", "Profile"],
+      },
+      {
+        name: "Product",
+        iconDown: <FaAngleDown />,
+        product: ["Product", "All Products", "Add/Edit Product"],
+      },
+      {
+        name: "Orders",
+        iconDown: <FaAngleDown />,
+        order: ["Orders", "All Orders", "Order Detail"],
+      },
+      {
+        name: "Sale Page",
+        iconDown: <FaAngleDown />,
+        salePage: ["Sale Page", " Sales Version 1", "Sales Version 2"],
+      },
+      {
+        name: "Shop",
+        iconDown: <FaAngleDown />,
+        shop: [
+          " Shop",
+          "Search product",
+          "Single product",
+          "Cart",
+          "Checkout",
+          "Alternative Checkout",
+          "Order confirmation",
+        ],
+      },
+    ],
   },
   {
     id: 3,
@@ -208,8 +236,10 @@ export const DropDowntwo = [
       {
         name: "Fashion",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
           headerOne: "Men's Fashion",
+          iconDown: <FaAngleDown />,
           manFashion: [
             { value: " T-Shirt", icon: "" },
             { value: "Formal Shirt", icon: "" },
@@ -259,7 +289,9 @@ export const DropDowntwo = [
       {
         name: "Electronics",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
+          iconDown: <FaAngleDown />,
           headerOne: "Accessories & Supplies",
           accessories: [
             { value: "Audio & Video Accessories", img: "" },
@@ -290,7 +322,9 @@ export const DropDowntwo = [
       {
         name: "Books",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
+          iconDown: <FaAngleDown />,
           headerOne: "Arts & Photography",
           artsPhotoGraphy: [
             { value: "Architecture" },
@@ -318,11 +352,12 @@ export const DropDowntwo = [
           ],
         },
       },
-
       {
         name: "Sports and Outdoors",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
+          iconDown: <FaAngleDown />,
           headerOne: "Outdoor Recreation",
           outdoorRecreation: [
             { value: "Accessories" },
@@ -352,7 +387,9 @@ export const DropDowntwo = [
       {
         name: "Software",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
+          iconDown: <FaAngleDown />,
           headerOne: "Accounting & Finance",
           accountingFinance: [
             { value: "Business Accounting" },
@@ -379,7 +416,9 @@ export const DropDowntwo = [
       {
         name: "Toys and Game",
         icon: <FaAngleRight />,
+        iconDown: <FaAngleDown />,
         item: {
+          iconDown: <FaAngleDown />,
           headerOne: "Arts & Crafts",
           artsCrafts: [
             { value: "Adhesives" },
@@ -407,18 +446,21 @@ export const DropDowntwo = [
       {
         id: 1,
         name: "Sale Pages",
+        iconDown: <FaAngleDown />,
         item: ["Version 1", "Version 2"],
         icon: <FaCaretRight />,
       },
       {
         id: 2,
         name: "Vendor",
+        iconDown: <FaAngleDown />,
         item: ["All Vendors", "Vendor Store"],
         icon: <FaCaretRight />,
       },
       {
         id: 3,
         name: "Shop",
+        iconDown: <FaAngleDown />,
         item: [
           "Search Product",
           "Single Product",
@@ -441,28 +483,32 @@ export const DropDowntwo = [
       {
         id: 1,
         name: "Orders",
+        iconDown: <FaAngleDown />,
         item: ["Order List", "Order Detail"],
         icon: <FaCaretRight />,
       },
       {
         id: 2,
         name: "Profiles",
+        iconDown: <FaAngleDown />,
         item: ["View Profile", "Edit Profile"],
         icon: <FaCaretRight />,
       },
       {
         id: 3,
         name: "Address",
+        iconDown: <FaAngleDown />,
         item: ["Address List", "Address Details"],
         icon: <FaCaretRight />,
       },
       {
         id: 4,
         name: "Support Tickets",
+        iconDown: <FaAngleDown />,
         item: ["All Tickets", "Tickets Details"],
         icon: <FaCaretRight />,
       },
-      {  name: "Wishlist" },
+      { name: "Wishlist" },
     ],
   },
   {
@@ -471,22 +517,22 @@ export const DropDowntwo = [
     isTwoComp: true,
     icon: <FaAngleDown />,
     subItem: [
-      {  name: "Dashboard" },
+      { name: "Dashboard" },
       {
         id: 2,
         name: "Products",
+        iconDown: <FaAngleDown />,
         item: ["All Products", "Add/Edit Product"],
         icon: <FaCaretRight />,
       },
       {
         id: 3,
         name: "Order",
+        iconDown: <FaAngleDown />,
         item: ["All Orders", "Order Details"],
         icon: <FaCaretRight />,
       },
-      {  name: "Profile" },
+      { name: "Profile" },
     ],
   },
 ];
-
-

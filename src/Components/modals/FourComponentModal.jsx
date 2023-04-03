@@ -15,28 +15,28 @@ const FourComponentModal = ({ item, setVisible, visible }) => {
       >
         <div className="FourComponentModalUnderMain">
           <div className="FourComponentModalUnderTxt FourComponentModalDivColor">
-            <FourComponentModalList item={modaldata?.home} />
+            <FourComponentModalList item={modaldata[0]?.home} />
           </div>
           <div className="FourComponentModalUnderTxt">
-            <FourComponentModalList item={modaldata?.userAccount} />
+            <FourComponentModalList item={modaldata[1].userAccount} />
           </div>
           <div className="FourComponentModalUnderTxt FourComponentModalDivColor">
             <div>
-              <FourComponentModalList item={modaldata?.vendorAccount} />
+              <FourComponentModalList item={modaldata[2]?.vendorAccount} />
             </div>
             <div>
-              <FourComponentModalList item={modaldata?.product} />
+              <FourComponentModalList item={modaldata[3]?.product} />
             </div>
             <div>
-              <FourComponentModalList item={modaldata?.order} />
+              <FourComponentModalList item={modaldata[4]?.order} />
             </div>
           </div>
           <div className="FourComponentModalUnderTxt">
             <div>
-              <FourComponentModalList item={modaldata?.salePage} />
+              <FourComponentModalList item={modaldata[5]?.salePage} />
             </div>
             <div>
-              <FourComponentModalList item={modaldata?.shop} />
+              <FourComponentModalList item={modaldata[6]?.shop} />
             </div>
           </div>
         </div>

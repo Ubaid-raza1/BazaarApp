@@ -59,6 +59,8 @@
         max-width: 900px;
         padding: 20px 24px;
     }
+
+  
 }
 
 @media (min-width: 600px) {
@@ -88,7 +90,18 @@
         padding-left: 24px;
         padding-right: 24px;
     }
+    .CardModalSecondImg {
+        width: 100%;
+        margin: auto;
+        padding-top: 0;
+        padding-left: 0;
+    }
 
+    .CardModalSecondImg>img {
+        width: 100%;
+        object-fit: contain;
+        height: 400px;
+    }
 
 }
 
@@ -264,3 +277,15 @@
         right: 20px;
     }
 }
+
+/* @media (min-width: 280px) {
+    .CardModalSecondImg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .CardModalSecondImg>img {
+        height: 250px;
+        object-fit: contain;
+    }
+} */
