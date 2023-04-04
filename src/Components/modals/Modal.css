@@ -4,9 +4,8 @@
 .modalsMain,
 .FourComponentModalMain,
 .ModalsTwoMain,
-.fullScreen {
+.FullScreenModalMain {
     position: relative;
-    /* display: inline-block; */
 }
 
 .DropDownModal,
@@ -219,7 +218,7 @@
     z-index: 98;
     background-color: #FFFFFF;
     width: 1067px;
-    padding-top: 46px;
+    padding: 46px 0;
     padding-left: 28px;
     border-bottom: 1px solid #ccc;
 }
@@ -240,6 +239,27 @@
     background-color: #FCE9EC;
     color: #D23F57;
 
+}
+
+.FullScreenDataFirst>ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.FullScreenDataFirst ul>li {
+    list-style: none;
+    width: 20%;
+    padding: 10px 0;
+}
+
+.FullScreenDataFirst ul>li:hover {
+
+    color: #D23F57;
+}
+
+.FullScreenDataFirst {
+    padding-bottom: 35px;
 }
 
 .FourComponentModalUnderMain {
@@ -518,7 +538,7 @@
 }
 
 .CardModalBody {
-    
+
     position: relative;
     border-radius: 8px;
     background-color: #fff;
@@ -575,7 +595,7 @@
     font-weight: 700;
 }
 
-.AddCartBtn{
+.AddCartBtn {
     padding: 9.6px 40px;
     color: rgb(255, 255, 255);
     background-color: rgb(210, 63, 87);
@@ -610,7 +630,8 @@
     font-size: 20px;
     cursor: pointer;
 }
-.AddCart > button{
+
+.AddCart>button {
     display: inline-flex;
     -webkit-box-align: center;
     align-items: center;
@@ -641,7 +662,8 @@
     padding: 0.6rem;
     height: 45px;
 }
-.AddCart span{
+
+.AddCart span {
     margin: 0px 20px;
     font-size: 20px;
     font-weight: 600;
@@ -649,4 +671,5 @@
     text-transform: none;
     white-space: normal;
 }
+
 /* CardModal */

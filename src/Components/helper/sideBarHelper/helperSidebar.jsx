@@ -13,6 +13,17 @@ export const getSidebarData = (item) => {
 };
 
 export const getSidebarDataTwo = (item) => {
+  const nestedProduct = [
+    "Sale Pages",
+    "Vendor",
+    "Shops",
+    "Orders",
+    "Profiles",
+    "Address",
+    "Support Tickets",
+    "Products",
+    "Order",
+  ];
   if (item?.name === "Home") return item?.home;
   if (item?.name === "User Account") return item?.userAccount;
   if (item?.name === "Vendor Account") return item?.vendorAccount;
@@ -20,17 +31,6 @@ export const getSidebarDataTwo = (item) => {
   if (item?.name === "Orders") return item?.order;
   if (item?.name === "Sale Page") return item?.salePage;
   if (item?.name === "Shop") return item?.shop;
-  if (
-    item?.name === "Sale Pages" ||
-    item?.name === "Vendor" ||
-    item?.name === "Shops" ||
-    item?.name === "Orders" ||
-    item?.name === "Profiles" ||
-    item?.name === "Address" ||
-    item?.name === "Support Tickets" ||
-    item?.name === "Products" ||
-    item?.name === "Order"
-  )
-    return item?.item;
-    return false;
+  if (nestedProduct.includes(item?.name)) return item?.item;
+  return false;
 };

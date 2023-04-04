@@ -1,13 +1,21 @@
 import React from "react";
+import { getFullScreenData } from "../navbarHelper/FullScreenDataHelper";
+// import getFullScreenData   from "";
 
-const FullScreenModalListTwo = ({ head, item }) => {
+const FullScreenModalListTwo = ({ data }) => {
+  console.log("=====>", data);
+  const fullScreen = getFullScreenData(data);
   return (
     <div className="FullScreenModalListTwo">
-      <h6 className="FullScreenModalListTwoHeader">{head}</h6>
+      {/* <h6 className="FullScreenModalListTwoHeader">{head}</h6> */}
       <ul>
-        {item?.map((Ele,i) => {
+        {fullScreen &&
+          fullScreen?.map((Ele, i) => {
+            return <li key={i}>{Ele?.value}</li>;
+          })}
+        {/* {fullScreen?.map((Ele, i) => {
           return <li key={i}>{Ele?.value}</li>;
-        })}
+        })} */}
       </ul>
     </div>
   );

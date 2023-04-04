@@ -5,7 +5,7 @@ const FourComponentModalList = ({ item, setVisible, visible }) => {
   return (
     <ul>
       {item?.map((ele) => (
-        <li onMouseOverCapture={() => setVisible(visible)}>{ele}</li>
+        <li onMouseOverCapture={() => setVisible(visible)}>{ele?.name}</li>
       ))}
     </ul>
   );

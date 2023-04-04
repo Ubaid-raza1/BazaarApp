@@ -25,7 +25,7 @@ const FullScreenSidebarDataTwo = ({ item, FullScreenData }) => {
           style={{ display: toogle ? "block" : "none" }}
         >
           {FullScreenData?.map((ele) => (
-            <p>{ele}</p>
+            <p>{ele?.name}</p>
           ))}
         </div>
       )}

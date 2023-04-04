@@ -4,7 +4,6 @@ import FullScreenSidebarDataTwo from "./FullScreenSidebarDataTwo";
 import { getSidebarDataTwo } from "../helper/sideBarHelper/helperSidebar";
 
 const FullScreenSidebarData = ({ sidebarData, item }) => {
-  console.log("dropData===>", sidebarData);
   const [toogle, setToogle] = useState(false);
   return (
     <>
@@ -16,7 +15,7 @@ const FullScreenSidebarData = ({ sidebarData, item }) => {
         <span>{item?.name}</span>
         <span
           style={{
-            transform: `rotate(${toogle ? "180deg" : "0deg"})`
+            transform: `rotate(${toogle ? "180deg" : "0deg"})`,
           }}
         >
           {item?.icon}

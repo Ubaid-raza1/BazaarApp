@@ -6,11 +6,9 @@ import ModalWrapper from "./ModalWrapper";
 const FullScreenModal = ({ item, setVisible, visible }) => {
   const [fullScreenData, setFullScreenData] = useState();
 
-  const check = (data) => {
-    setFullScreenData(data);
-  };
+  console.log("fullscreenModal<======>", fullScreenData);
   return (
-    <div className="FullScreenModalMain" onMouseLeave={()=>setVisible(false)}>
+    <div className="FullScreenModalMain" onMouseLeave={() => setVisible(false)}>
       <ModalWrapper className="FullScreenModal">
         <div className="fullScreen">
           <div
@@ -18,9 +16,11 @@ const FullScreenModal = ({ item, setVisible, visible }) => {
             style={{
               display: visible ? "block" : "none",
             }}
-            
           >
-            <FullScreenModalList item={item} check={check} />
+            <FullScreenModalList
+              item={item}
+              setFullScreenData={setFullScreenData}
+            />
           </div>
           <div
             className="fullScreenRight"
