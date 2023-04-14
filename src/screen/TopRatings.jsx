@@ -4,6 +4,7 @@ import TopRatingCard from "../Components/cards/TopRatingCard";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import { featuresBrands } from "../data/TopRatingOrFeatureBrands";
 import { topRatingOne, topRatingTwo } from "../data/TopRatingOrFeatureBrands";
+import { GiAlliedStar,GiStarFormation } from "react-icons/gi";
 
 const className = {
   cardWidth: "featureBrandCard",
@@ -14,7 +15,7 @@ const TopRatings = () => {
   return (
     <div className="topRatingOrFeaturesBrands">
       <div className="topRatingMain">
-        <IconTxtHeader text="Top Rating" Icon={""} />
+        <IconTxtHeader text="Top Rating" Icon={<GiAlliedStar id="HeaderIconTwo"/>} />
         <div className="topRating">
           <div className="topRatingCard">
             <div>
@@ -27,7 +28,7 @@ const TopRatings = () => {
         </div>
       </div>
       <div className="featuredBrandsMain">
-        <IconTxtHeader text="Featured Brands" Icon={""} />
+        <IconTxtHeader text="Featured Brands" Icon={<GiStarFormation id="HeaderIconThree"/>} />
         <div className="FeaturesBrands">
           <div className="featureBrand">
             <div className="featureCard">

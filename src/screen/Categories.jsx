@@ -6,7 +6,7 @@ import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 const Categories = () => {
   return (
     <div className="mainCategories">
-      <IconTxtHeader text="Categories" Icon={<BsFillGridFill />} />
+      <IconTxtHeader text="Categories" Icon={<BsFillGridFill id="HeaderIcon"/>} />
       <div className="firstCategory">
         {firstCategories?.map((item) => {
           return (

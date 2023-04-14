@@ -462,7 +462,7 @@
         flex-direction: column;
     }
 
-    
+
 }
 
 /* footerMain page css */
@@ -651,4 +651,19 @@
 .secondImgDiv>img {
     width: 100%;
     height: 100%;
+}
+
+#HeaderIcon {
+    font-size: 24px;
+    color: #D23F57;
+}
+
+#HeaderIconThree {
+    font-size: 30px;
+    color: #FF9101;
+}
+
+#HeaderIconTwo {
+    font-size: 24px;
+    color: #FAB400;
 }

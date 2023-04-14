@@ -55,7 +55,7 @@ const FlashDeals = () => {
   return (
     <>
       <div className="flashDealMain">
-        <IconTxtHeader Icon={<BsLightningChargeFill />} text="Flash Deal" />
+        <IconTxtHeader Icon={<BsLightningChargeFill id="HeaderIcon"/>} text="Flash Deal" />
         <div className="flashDeal">
           <SecondSlider activeIndex={activeIndex} getCardData={getCardData} />
           <div className="cardIndicator">

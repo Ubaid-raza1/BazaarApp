@@ -256,6 +256,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Men's Fashion",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: " T-Shirt", icon: "" },
               { name: "Formal Shirt", icon: "" },
@@ -273,6 +274,7 @@ export const DropDowntwo = [
           },
           {
             head: "Women's Fashion",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Clothing", icon: "" },
               { name: "Shoes", icon: "" },
@@ -290,6 +292,7 @@ export const DropDowntwo = [
           },
           {
             head: "Girls' Fashion",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Clothing", icon: "" },
               { name: "Shoes", icon: "" },
@@ -314,6 +317,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Accessories & Supplies",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Audio & Video Accessories", img: "" },
               { name: "Cables", img: "" },
@@ -325,6 +329,7 @@ export const DropDowntwo = [
           },
           {
             head: "Power Accessories",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "AC Adapters", img: "" },
               { name: "Isolation Transformers", img: "" },
@@ -335,6 +340,7 @@ export const DropDowntwo = [
           },
           {
             head: "Video Game Consoles & Accessories",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "PlayStation 4", img: "" },
               { name: "PlayStation 3", img: "" },
@@ -352,6 +358,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Arts & Photography",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Architecture" },
               { name: "Business of Art" },
@@ -363,6 +370,7 @@ export const DropDowntwo = [
           },
           {
             head: "Biographies & Memoirs",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Arts & Literature" },
               { name: "Leaders & Notable People" },
@@ -373,6 +381,7 @@ export const DropDowntwo = [
           },
           {
             head: "Children's Books",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Action & Adventure" },
               { name: " Animals" },
@@ -390,6 +399,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Outdoor Recreation",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Accessories" },
               { name: "Camping & Hiking" },
@@ -401,6 +411,7 @@ export const DropDowntwo = [
           },
           {
             head: "Exercise & Fitness",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Balance Trainers" },
               { name: "Cardio Training" },
@@ -411,6 +422,7 @@ export const DropDowntwo = [
           },
           {
             head: "Sports Medicine",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Athletic Tape & Supplies" },
               { name: "First Aid Kits" },
@@ -427,6 +439,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Accounting & Finance",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Business Accounting" },
               { name: "Check Printing" },
@@ -436,6 +449,7 @@ export const DropDowntwo = [
           },
           {
             head: "Antivirus & Security",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Antivirus" },
               { name: "Internet Security Suites" },
@@ -444,6 +458,7 @@ export const DropDowntwo = [
           },
           {
             head: "Business & Office",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Communication" },
               { name: " Contact Management" },
@@ -462,6 +477,7 @@ export const DropDowntwo = [
         item: [
           {
             head: "Arts & Crafts",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Adhesives" },
               { name: "Aprons & Smocks" },
@@ -471,6 +487,7 @@ export const DropDowntwo = [
           },
           {
             head: "Baby & Toddler Toys",
+            iconDown: <FaAngleDown />,
             subItem: [
               { name: "Activity Centers" },
               { name: "Balls" },

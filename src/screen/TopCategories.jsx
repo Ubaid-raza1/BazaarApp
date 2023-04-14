@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill ,BsFillGridFill } from "react-icons/bs";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import ThirdSlider from "../Components/sliders/ThirdSlider";
+
 
 const TopCategories = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -34,7 +35,7 @@ const TopCategories = () => {
   };
   return (
     <div className="topCategoriesMain">
-      <IconTxtHeader text="Top Categories" Icon={""} />
+      <IconTxtHeader text="Top Categories" Icon={<BsFillGridFill id="HeaderIcon"/>} />
       <div className="topCategories">
         <ThirdSlider activeIndex={activeIndex} />
         <div className="topCardIndicator">

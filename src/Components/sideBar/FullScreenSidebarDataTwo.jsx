@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
+import FullScreenSidebarNestedData from "./FullScreenSidebarNestedData";
+import { getSidebarDataThree } from "../helper/sideBarHelper/helperSidebar";
 
 const FullScreenSidebarDataTwo = ({ item, FullScreenData }) => {
   const [toogle, setToogle] = useState(false);
@@ -24,9 +26,21 @@ const FullScreenSidebarDataTwo = ({ item, FullScreenData }) => {
           className="FullScreenSidebarTwo"
           style={{ display: toogle ? "block" : "none" }}
         >
-          {FullScreenData?.map((ele) => (
-            <p>{ele?.name}</p>
-          ))}
+          {FullScreenData?.map((ele) => {
+            const fullScreenDataNested = getSidebarDataThree(ele);
+            return (
+              <>
+                {ele?.name ? (
+                  <p>{ele?.name}</p>
+                ) : (
+                  <FullScreenSidebarNestedData
+                    ele={ele}
+                    fullScreenDataNested={fullScreenDataNested}
+                  />
+                )}
+              </>
+            );
+          })}
         </div>
       )}
     </>

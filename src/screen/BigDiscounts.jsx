@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import IconTxtHeader from "../Components/iconTxtHeader/IconTxtHeader";
 import FourSlider from "../Components/sliders/FourSlider";
+import { BiGift } from "react-icons/bi";
 
 const BigDiscounts = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -33,7 +34,7 @@ const BigDiscounts = () => {
   };
   return (
     <div className="bigDiscountMain">
-      <IconTxtHeader text="Big Discount" Icon={""} />
+      <IconTxtHeader text="Big Discount" Icon={<BiGift id="HeaderIcon"/>} />
       <div className="bigDiscountCard">
         <FourSlider activeIndex={activeIndex} />
         <div className="topCardIndicator">
